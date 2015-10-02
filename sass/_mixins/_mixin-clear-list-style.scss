@@ -1,0 +1,6 @@
+// Clear unordered list styles
+@mixin clear-list-style() {
+	margin:0;
+	padding:0;
+	list-style:none;
+}

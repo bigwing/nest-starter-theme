@@ -1,0 +1,21 @@
+// Linear Gradient
+// takes in 7 variables.
+// $deg = the degree the gradient needs to be
+// $top-color = the hexadecimal color that is used at the top. It will convert to RGB
+// $top-color-opacity = the opacity level for $top-color
+// $top-percentage = the percentage of color to be shown. 0% means it will go all the way to the bottom
+// $bottom-color = the hexadecimal color that is used at the bottom. It will convert to RGB
+// $bottom-color-opacity = the opacity level for $bottom-color
+// $bottom-percentage = the percentage of color to be shown. 0% means it will go all the way to the top
+@mixin linear-gradient($deg, $top-color, $top-color-opacity, $top-percentage, $bottom-color, $bottom-color-opacity, $bottom-percentage){
+    $top-color: rgba($top-color, $top-color-opacity);
+    $bottom-color: rgba($bottom-color, $bottom-color-opacity);
+    background: $top-color; /* Old browsers */
+    background: -moz-linear-gradient($deg, $top-color $top-percentage, $bottom-color $bottom-percentage); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($top-percentage,$top-color), color-stop($bottom-percentage,$bottom-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient($deg, $top-color $top-percentage, $bottom-color $bottom-percentage); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($deg, $top-color $top-percentage, $bottom-color $bottom-percentage); /* Opera 11.10+ */
+    background: -ms-linear-gradient($deg, $top-color $top-percentage, $bottom-color $bottom-percentage); /* IE10+ */
+    background: linear-gradient($deg, $top-color $top-percentage, $bottom-color $bottom-percentage); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}

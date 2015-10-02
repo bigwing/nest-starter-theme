@@ -1,0 +1,35 @@
+table {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	overflow: hidden;
+
+	@include break-point-mobile {
+		border: 0;
+
+		thead, th {
+			display: none;
+		}
+		tr {
+			margin-bottom: 10px;
+			display: block;
+			border-bottom: 2px solid #ddd;
+		}
+		td {
+			display: block;
+			text-align: right;
+			border-bottom: 1px dotted #ccc;
+		}
+		td:last-child {
+			border-bottom: 0;
+		}
+		td:before {
+			content: attr(data-label);
+			float: left;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+}

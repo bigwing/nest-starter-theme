@@ -1,0 +1,49 @@
+html {
+	font-size: 62.5%;
+}
+::-moz-selection {
+	background: $color__selection;
+	color: $color__selection-text;
+	text-shadow: none;
+}
+::-webkit-selection {
+	background: $color__selection;
+	color: $color__selection-text;
+	text-shadow: none;
+}
+::selection {
+	background: $color__selection;
+	color: $color__selection-text;
+	text-shadow: none;
+}
+blockquote, q {
+	margin-bottom: 4%;
+	padding: 20px 20px 20px 40px;
+	@include font-size(2.4);
+	line-height: $font__line-height-body;
+	font-style: italic;
+
+	&:before, &:after {
+		content: none;
+	}
+	p {
+		margin: 0;
+	}
+}
+hr {
+	width: 100%;
+	margin: 50px 0;
+	border: 0;
+	height: 0;
+	border-bottom: 1px solid $color__background-hr;
+}
+img {
+	height: auto;
+	max-width: 100%;
+
+	&:hover {
+		@include fade();
+	}
+}
+@import "lists";
+@import "tables";

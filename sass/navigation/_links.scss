@@ -1,0 +1,27 @@
+/*GENERIC*/
+a,
+a:link,
+a:active,
+a:visited {
+	color: $color__link;
+	text-decoration: none;
+	outline: none;
+	@include fade;
+
+	&:focus, &:hover {
+		color: $color__link-hover;
+		text-decoration: none;
+		outline: none;
+		@include fade;
+	}
+}
+
+a.secondary,
+a:link.secondary,
+a:active.secondary,
+a:visited.secondary {
+	color: $color__link-secondary;
+	&:focus, &:hover {
+		color: $color__link-secondary-hover;
+	}
+}

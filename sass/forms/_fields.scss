@@ -1,0 +1,57 @@
+input[type="text"],
+input[type="email"],
+input[type="telephone"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+	display: inline-block;
+	background: none;
+	outline: none;
+	@include appearance(none);
+
+	&:focus {
+		font-style: normal;
+		color: $color__input-text-focus;
+		border: 1px solid $color__input-border-focus;
+		background-color: $color__input-bg-focus;
+		@include fade;
+	}
+
+}
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"] {
+	max-width: 200px;
+}
+input[type="color"] {
+	max-width:100px;
+	padding:0;
+	cursor: pointer;
+}
+textarea {
+	width: 100%;
+	height: 100%;
+}
+
+select::-ms-expand {display: none;}
+.non-ie select {
+	text-indent: 0.01px;
+	text-overflow: '';
+	background: url('img/down-caret.png') no-repeat 95% center;
+	background-clip: padding-box;
+	background-clip: padding-box;
+}

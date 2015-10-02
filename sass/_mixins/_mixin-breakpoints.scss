@@ -1,0 +1,19 @@
+// Breakpoints
+/*1280*/
+@mixin break-point-desktop {
+  @media screen and (max-width: 80em) {
+      @content;
+    }
+}
+/*1024px*/
+@mixin break-point-tablet {
+  @media screen and (max-width: 64em) {
+      @content;
+    }
+}
+/*980px*/
+@mixin break-point-mobile {
+  @media screen and (max-width: 61.25em) {
+    @content;
+  }
+}

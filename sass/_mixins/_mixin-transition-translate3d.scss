@@ -1,0 +1,8 @@
+// Transition translate3d
+@mixin transform-translate3d($transform...) {
+  -webkit-transform: translate3d($transform);
+     -moz-transform: translate3d($transform);
+      -ms-transform: translate3d($transform);
+       -o-transform: translate3d($transform);
+          transform: translate3d($transform);
+}

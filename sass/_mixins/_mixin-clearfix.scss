@@ -1,0 +1,5 @@
+// Clearfix
+@mixin clearfix() {
+	clear:both;
+	zoom:1;
+}

@@ -1,0 +1,78 @@
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	height: 50px;
+	line-height: 50px;
+	max-width: 400px;
+	width: 95%;
+	padding: 0 0 0 10px;
+	margin: 0;
+	@include border-radius(0);
+	@include fade;
+	color: $color__input-text;
+	border: 1px solid $color__input-border;
+	font-weight: $font__regular;
+	font-style: normal;
+	@include font-size(1.7);
+
+	&:focus {
+		font-style: normal;
+		color: $color__input-text-focus;
+		border: 1px solid $color__input-border-focus;
+		background-color: $color__input-bg-focus;
+		@include fade;
+	}
+
+}
+input.info {
+	border-color:$color__input-border-info !important;
+	@include background-opacity($color__input-border-info, .3);
+	color: $color__input-border-info !important;
+
+	&:focus {
+		@include background-opacity($color__input-border-info, .1);
+		border: none;
+		border-left: 5px solid $color__input-border-info;
+	}
+
+}
+
+input.success {
+	border-color: $color__input-border-success  !important;
+	@include background-opacity($color__input-border-success, .3);
+	color: $color__input-border-success !important;
+
+	&:focus {
+		@include background-opacity($color__input-border-success, .1);
+		border: none;
+		border-left: 5px solid $color__input-border-success;
+	}
+
+}
+
+input.error {
+	border-color: $color__input-border-error  !important;
+	@include background-opacity($color__input-border-error, .3);
+	color: $color__input-border-error !important;
+
+	&:focus {
+		@include background-opacity($color__input-border-error, .1);
+		border: none;
+		border-left: 5px solid $color__input-border-error;
+	}
+
+}
+
+input.warning {
+	border-color: $color__input-border-warning  !important;
+	@include background-opacity($color__input-border-warning, .3);
+	color: $color__input-border-warning !important;
+
+	&:focus {
+		@include background-opacity($color__input-border-warning, .1);
+		border: none;
+		border-left: 5px solid $color__input-border-warning;
+	}
+
+}

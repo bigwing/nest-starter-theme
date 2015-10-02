@@ -1,0 +1,74 @@
+/*   ## COLORS   */
+$color__white: #ffffff;
+$color__light-gray: #ecf0f1;
+$color__gray: #b5b5b5;
+$color__black: #292929;
+$color__success-green: #8fbd3e;
+$color__error-red: #cc1e2b;
+$color__warning-yellow: #f1c40f;
+$color__info-blue: #31708f;
+
+/*   ## BACKGROUNDS   */
+$color__background-screen: $color__white;
+$color__background-body: $color__light-gray;
+$color__background-content: $color__white;
+$color__background-sidebar: $color__white;
+$color__background-hr: $color__light-gray;
+$color__background-footer: $color__black;
+$color__background-nav: $color__white;
+$color__background-nav-dropdown: $color__white;
+
+/*   ## TEXT   */
+$color__text-main: $color__black;
+$color__text-alt: $color__white;
+$color__text-screen: $color__black;
+
+/*inputs*/
+$color__input-text: $color__black;
+$color__input-bg: $color__white;
+$color__input-border: $color__black;
+$color__input-text-focus: $color__black;
+$color__input-bg-focus: $color__light-gray;
+$color__input-border-focus: $color__light-gray;
+$color__input-border-info: $color__info-blue;
+$color__input-border-success: $color__success-green;
+$color__input-border-error: $color__error-red;
+$color__input-border-warning: $color__warning-yellow;
+
+/*   ## TABLES   */
+$color__background-table-head: $color__gray;
+$color__background-table-row: $color__light-gray;
+$color__table-head: $color__light-gray;
+
+/*   ## SELECTION   */
+$color__selection: $color__gray;
+$color__selection-text: $color__white;
+
+/*   ## LINKS   */
+$color__link: $color__black;
+$color__link-hover: rgba($color__link, .8);
+$color__link-secondary: $color__black;
+$color__link-secondary-hover: rgba($color__link-secondary, .8);
+$color__link-nav: $color__white;
+$color__link-nav-hover: $color__black;
+$color__link-nav-bg-hover: $color__black;
+
+/*   ## BUTTON  */
+$color__button-text: $color__white;
+$color__button-hover: $color__white;
+$color__button-border: $color__black;
+$color__button-bg: rgba($color__black, .9);
+$color__button-bg-hover: rgba($color__button-bg, .7);
+$color__button-alt-text: $color__white;
+$color__button-alt-text-hover: $color__white;
+$color__button-alt-border: $color__black;
+$color__button-alt-bg: $color__black;
+$color__button-alt-bg-hover: $color__black;
+
+/*   ## SOCIAL MEDIA COLORS   */
+$color__facebook: #3b5998;
+$color__twitter: #55acee;
+$color__pinterest: #cc2127;
+$color__instagram: #3f729b;
+$color__youtube: #cd201f;
+$color__google: #dc4e41;

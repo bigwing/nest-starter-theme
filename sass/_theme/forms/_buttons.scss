@@ -1,0 +1,48 @@
+.btn,
+.btn:link,
+.btn:active,
+.btn:visited,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	height: 60px;
+	line-height: 60px;
+	min-width: 120px;
+	padding: 0 20px;
+	border: 1px solid $color__button-border;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: $font__alt;
+	@include font-size(1.7);
+	color: $color__button-text;
+	background-color: $color__button-bg;
+	font-weight: $font__light;
+
+	&:focus,
+	&:hover {
+		background-color: $color__button-bg-hover;
+		color: $color__button-text;
+	}
+
+}
+
+.btn-alt,
+.btn-alt:link,
+.btn-alt:active,
+.btn-alt:visited,
+button.btn-alt,
+input[type="button"].btn-alt,
+input[type="reset"].btn-alt,
+input[type="submit"].btn-alt {
+	color: $color__button-alt-text;
+	border: 1px solid $color__button-alt-border;
+	background-color: $color__button-alt-bg;
+
+	&:focus,
+	&:hover {
+		background-color: $color__button-alt-bg-hover;
+		color: $color__button-alt-text-hover;
+	}
+
+}
