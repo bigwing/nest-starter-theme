@@ -19,6 +19,9 @@ add_action( 'after_setup_theme', function() {
     //NEW HTML5 Galleries
 
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    
+    /* Since WordPress 4.1 */
+    add_theme_support( 'title-tag' );
 
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
