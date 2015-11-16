@@ -85,7 +85,7 @@ function nest_get_logo_img( $type = 'retina', $size = array(), $echo = true ) {
     if ( $type == 'retina' ) {
         $option_name = 'nest_retina_logo';
     } else {
-        $option_name = 'next_logo';   
+        $option_name = 'nest_logo';   
     }
     
     $attachment_url = get_option( $option_name, false );
