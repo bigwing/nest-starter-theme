@@ -7,7 +7,7 @@
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx){
     & {
-      background-image: url($file + '.' + $type);
+      background-image: url($file + '@2x.' + $type);
       -webkit-background-size: $width $height;
       -moz-background-size: $width $height;
       -o-background-size: $width $height;
