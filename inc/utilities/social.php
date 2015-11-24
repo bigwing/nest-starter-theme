@@ -33,7 +33,6 @@ class nest_Social {
 		'youtu.be'           => array( 'name' => 'YouTube',        'class' => 'youtube',       'icon' => 'fa-youtube',       'icon-sign' => 'fa-youtube-sign'     ),
 		'youtube.com'        => array( 'name' => 'YouTube',        'class' => 'youtube',       'icon' => 'fa-youtube',       'icon-sign' => 'fa-youtube-sign'     ) );
 	}
-	
 	//Takes an array of url strings
 	//Return HTML list items
 	public function get_icons( $urls = array() ) {
@@ -43,21 +42,18 @@ class nest_Social {
 		if ( empty( $urls ) || !is_array( $urls ) ) {
 			return '';
 		}
-		$html = '<ul>';
+		$html = '<ul id="social-wrap">';
 		foreach( $urls as $url ) {
 			foreach( $this->social_networks as $domain => $args ) {
 				if ( false !== strpos( $url, $domain ) ) { 
 					$html .= sprintf( '<li><a href="%1$s" target="_blank"><i class="fa fa-%2$s fa-fw"></i><span class="fa-content">&nbsp;%3$s</span></a></li>',esc_url( $url ), esc_attr( $args[ 'class' ] ), esc_html( $args[ 'name' ] ) );
 				}
 			}
-			
 		}
 		$html .= '</ul>';
 		return $html;
-		
 	}
 }
-
 function nest_get_social( $echo = true ) {
     $locations = get_nav_menu_locations();
     $urls = array();
@@ -68,7 +64,7 @@ function nest_get_social( $echo = true ) {
             foreach( $menu_items as $index => $menu_item ) {
                 $urls[] = $menu_item->url;
             }
-        }        
+        }
     }
     $social_html = '';
     if ( !empty( $urls ) ) {

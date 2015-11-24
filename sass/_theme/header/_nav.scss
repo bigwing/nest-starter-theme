@@ -4,6 +4,7 @@
 	font-size: 0.1px;
 	height: 70px;
 	line-height: 70px;
+	@include background-opacity($color__gray, .2);
 	@include break-point-mobile {
 		display: none;
 	}

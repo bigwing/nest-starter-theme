@@ -33,7 +33,7 @@
           echo '<br /><a itemprop="email"' . 'href="mailto:' . esc_html( antispambot( $email ) ) .'">' . esc_html( antispambot( $email ) ) . '</a>'; 
         } ?>
     </div><!--schema-->
-	<?php wp_nav_menu( array('theme_location' => 'footer-menu' )); ?><!--footer--menu-->
+	<?php wp_nav_menu( array('theme_location' => 'footer-nav' )); ?><!--footer--menu-->
 </footer><!--footer-->
 <?php wp_footer(); ?>
 <?php

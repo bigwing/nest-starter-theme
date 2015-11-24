@@ -29,16 +29,21 @@
 		}
 		?>
 	</head>
-	<body <?php body_class(); ?> id="body-wrapper">
+	<body <?php body_class(); ?> id="body-wrap">
 		<?php do_action( 'body_open' ); ?>
-		<header class="header clear" role="banner">
-			<div class="content-wrapper">
+		<header class="header clear content-wrapper" role="banner">
+			<div id="top-utility-wrap">
 				<?php nest_get_social(); ?>
-				<a id="logo-wrapper" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
-				<?php wp_nav_menu( array('theme_location' => 'header-top-nav' )); ?><!--top-nav-->
+				<?php wp_nav_menu( array(
+					'theme_location' => 'header-top-utility-nav',
+					'container' => false,
+					'menu_class' => '',
+					'menu_id' => 'header-top-utility-nav'
+					) ); ?>
+				</div><!--top-utility-wrap-->
+				<a id="logo-wrap" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
 				<div id="mobile-nav"></div>
 				<nav class="nav clear" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'header-nav', 'container' => false ) ); ?>
 				</nav><!--nav-->
-			</div><!--content-wrapper-->
 		</header><!--header-->
