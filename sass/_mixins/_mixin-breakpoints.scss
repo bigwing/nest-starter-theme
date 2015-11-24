@@ -11,9 +11,21 @@
       @content;
     }
 }
-/*980px*/
+/*780px*/
 @mixin break-point-mobile {
-  @media screen and (max-width: 61.25em) {
+  @media screen and (max-width: 48.75em) {
+    @content;
+  }
+}
+/*640px*/
+@mixin break-point-small {
+  @media screen and (max-width: 40em) {
+    @content;
+  }
+}
+/*320px*/
+@mixin break-point-tiny {
+  @media screen and (max-width: 20em) {
     @content;
   }
 }

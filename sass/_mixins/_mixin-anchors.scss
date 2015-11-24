@@ -1,0 +1,13 @@
+/* example:
+@include anchor-colors ($color__black, $color__black, $color__black, $color__black, $color__blue, $color__blue);
+*/
+@mixin anchor-colors( $default, $link, $visited, $active, $focus, $hover ) {
+    a {
+        &         { color: $default; }
+        &:link    { color:$link; }
+        &:visited { color:$visited; }
+        &:active  { color:$active; }
+        &:focus   { color:$focus; }
+        &:hover   { color:$hover; }
+    }
+}

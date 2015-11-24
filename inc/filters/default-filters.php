@@ -33,7 +33,7 @@ function nest_view_article($more)
 
 
 add_filter( 'the_title', 'nest_the_title', 10, 2 );
-function nest_the_title( $title, $post_id ) {
+function nest_the_title( $title, $post_id = 0 ) {
     
     if ( is_admin() ) return $title;
 	
