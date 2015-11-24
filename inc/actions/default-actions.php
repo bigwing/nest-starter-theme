@@ -37,7 +37,6 @@ function nest_header_scripts() {
     wp_enqueue_script('jquery'); // Enqueue it!
     wp_enqueue_script('opubcothemescripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0.0', true ); // Custom scripts
     wp_enqueue_script( 'slicknav', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array( 'jquery' ), true );
-    wp_enqueue_script( 'retina', get_template_directory_uri() . '/js/retina.min.js', array( 'jquery' ), true );
 }
 
 function nest_theme_styles() {
