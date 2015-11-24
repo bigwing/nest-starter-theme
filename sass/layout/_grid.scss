@@ -28,6 +28,9 @@ $margin: 30px;
 		margin-bottom:$margin !important;
 		width:100% !important;
 	}
+    &.no-margin {
+        margin:0;
+    }
 
 }
 .col-100 {
@@ -85,4 +88,3 @@ $margin: 30px;
         width: 100%;
     }
 }
-.content {background: #ccc;padding:20px;}

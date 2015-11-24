@@ -60,9 +60,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*1280*/
 /*1024px*/
-/*980px*/
+/*780px*/
+/*640px*/
+/*320px*/
 /* short hand appearance */
 /* Background opacity */
+/* example:
+@include anchor-colors ($color__black, $color__black, $color__black, $color__black, $color__blue, $color__blue);
+*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -447,108 +452,106 @@ td, th {
   font-size: 17px;
   font-size: 1.7rem;
 }
-@media screen and (max-width: 61.25em) {
+@media screen and (max-width: 48.75em) {
   /* line 22, sass/layout/_grid.scss */
   [class*='col-'] {
     margin-bottom: 30px !important;
     width: 100% !important;
   }
 }
+/* line 31, sass/layout/_grid.scss */
+[class*='col-'].no-margin {
+  margin: 0;
+}
 
-/* line 33, sass/layout/_grid.scss */
+/* line 36, sass/layout/_grid.scss */
 .col-100 {
   width: 100%;
 }
-@media screen and (max-width: 61.25em) {
-  /* line 33, sass/layout/_grid.scss */
+@media screen and (max-width: 48.75em) {
+  /* line 36, sass/layout/_grid.scss */
   .col-100 {
     margin-bottom: 30px !important;
   }
 }
 
-/* line 39, sass/layout/_grid.scss */
+/* line 42, sass/layout/_grid.scss */
 .col-75 {
   width: 73.5%;
 }
 
-/* line 42, sass/layout/_grid.scss */
+/* line 45, sass/layout/_grid.scss */
 .col-60 {
   width: 58.5%;
 }
 
-/* line 45, sass/layout/_grid.scss */
+/* line 48, sass/layout/_grid.scss */
 .col-50 {
   width: 48.5%;
 }
 
-/* line 48, sass/layout/_grid.scss */
+/* line 51, sass/layout/_grid.scss */
 .col-40 {
   width: 38.5%;
 }
 
-/* line 51, sass/layout/_grid.scss */
+/* line 54, sass/layout/_grid.scss */
 .col-30 {
   width: 31.3%;
 }
 
-/* line 54, sass/layout/_grid.scss */
+/* line 57, sass/layout/_grid.scss */
 .col-25 {
   width: 23.5%;
 }
 @media screen and (max-width: 64em) {
-  /* line 54, sass/layout/_grid.scss */
+  /* line 57, sass/layout/_grid.scss */
   .col-25 {
     width: 48.5% !important;
     margin-bottom: 30px !important;
   }
 }
-@media screen and (max-width: 61.25em) {
-  /* line 54, sass/layout/_grid.scss */
+@media screen and (max-width: 48.75em) {
+  /* line 57, sass/layout/_grid.scss */
   .col-25 {
     width: 100% !important;
   }
 }
 
-/* line 64, sass/layout/_grid.scss */
+/* line 67, sass/layout/_grid.scss */
 .col-50-break {
   width: 48.5%;
   display: inline-block;
 }
-@media screen and (max-width: 61.25em) {
-  /* line 64, sass/layout/_grid.scss */
+@media screen and (max-width: 48.75em) {
+  /* line 67, sass/layout/_grid.scss */
   .col-50-break {
     width: 100%;
   }
 }
 
-/* line 72, sass/layout/_grid.scss */
+/* line 75, sass/layout/_grid.scss */
 .col-30-break {
   width: 31.5%;
   display: inline-block;
 }
-@media screen and (max-width: 61.25em) {
-  /* line 72, sass/layout/_grid.scss */
+@media screen and (max-width: 48.75em) {
+  /* line 75, sass/layout/_grid.scss */
   .col-30-break {
     width: 100%;
   }
 }
 
-/* line 80, sass/layout/_grid.scss */
+/* line 83, sass/layout/_grid.scss */
 .col-25-break {
   width: 23.5%;
   display: inline-block;
 }
-@media screen and (max-width: 61.25em) {
-  /* line 80, sass/layout/_grid.scss */
+@media screen and (max-width: 48.75em) {
+  /* line 83, sass/layout/_grid.scss */
   .col-25-break {
     width: 100%;
   }
-}
-
-/* line 88, sass/layout/_grid.scss */
-.content {
-  background: #ccc;
-  padding: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -885,7 +888,7 @@ table {
   border-spacing: 0;
   overflow: hidden;
 }
-@media screen and (max-width: 61.25em) {
+@media screen and (max-width: 48.75em) {
   /* line 1, sass/elements/_tables.scss */
   table {
     border: 0;
@@ -1159,7 +1162,7 @@ a:visited:hover {
   transition: all 0.2s ease;
 }
 
-/* line 22, sass/navigation/_links.scss */
+/* line 21, sass/navigation/_links.scss */
 a.secondary,
 a:link.secondary,
 a:active.secondary,
@@ -1683,7 +1686,7 @@ a:visited.secondary:hover {
   width: 20%;
   max-width: 100%;
 }
-@media screen and (max-width: 61.25em) {
+@media screen and (max-width: 48.75em) {
   /* line 35, sass/_theme/_theme-layout.scss */
   #sidebar {
     width: 100%;
@@ -1699,7 +1702,7 @@ a:visited.secondary:hover {
   height: 70px;
   line-height: 70px;
 }
-@media screen and (max-width: 61.25em) {
+@media screen and (max-width: 48.75em) {
   /* line 1, sass/_theme/_theme-nav.scss */
   .nav {
     display: none;
@@ -1782,7 +1785,7 @@ a:visited.secondary:hover {
   width: 100%;
   z-index: 9999;
 }
-@media screen and (max-width: 61.25em) {
+@media screen and (max-width: 48.75em) {
   /* line 1, sass/_theme/_theme-slick-nav.scss */
   .slicknav_menu {
     display: block;
