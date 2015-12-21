@@ -57,11 +57,31 @@
 		color:$color__link-nav;
 		text-decoration:none;
 	}
+<<<<<<< HEAD
 	li:hover > a,
 	& > a:focus,
 	& > a:hover {
 		color:$color__link-nav-hover;
 		background-color:$color__link-nav-bg-hover;
+=======
+	ul li > ul {
+		display: none;
+	}
+	ul li:hover > ul{
+		display: block;
+		position: absolute;
+		border:none;
+	    text-align: center;
+		height: auto;
+		width: 180px;
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	ul ul li {
+		display: block;
+		position: relative;
+>>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 	}
 }
 /* 2nd level dropdown nav styles */
