@@ -71,7 +71,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-/* line 2, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 2, sass/_normalize.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, a
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -82,45 +82,45 @@ del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, va
   vertical-align: baseline;
 }
 
-/* line 10, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 10, sass/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 13, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 13, sass/_normalize.scss */
 body {
   line-height: 1;
 }
 
-/* line 16, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 16, sass/_normalize.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 19, sass/_normalize.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 22, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 22, sass/_normalize.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 26, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 26, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 30, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 30, sass/_normalize.scss */
 a {
   outline: 0;
   text-decoration: none;
 }
 
-/* line 36, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 36, sass/_normalize.scss */
 *,
 *:after,
 *:before {
@@ -135,89 +135,89 @@ a {
   -webkit-margin-end: 0em;
 }
 
-/* line 48, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 48, sass/_normalize.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 53, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 53, sass/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* line 56, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 56, sass/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 59, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 59, sass/_normalize.scss */
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 63, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 63, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 67, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 67, sass/_normalize.scss */
 [hidden], template {
   display: none;
 }
 
-/* line 70, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 70, sass/_normalize.scss */
 a {
   background-color: transparent;
   outline: none;
   border: 0;
 }
 
-/* line 75, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 75, sass/_normalize.scss */
 a:active, a:hover {
   outline: 0;
 }
 
-/* line 78, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 78, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 81, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 81, sass/_normalize.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 84, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 84, sass/_normalize.scss */
 em, i {
   font-style: italic;
 }
 
-/* line 87, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 87, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 90, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 90, sass/_normalize.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 93, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 93, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 97, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 97, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 100, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 100, sass/_normalize.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -225,149 +225,149 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 106, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 106, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 109, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 109, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 112, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 112, sass/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 115, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 115, sass/_normalize.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 118, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 118, sass/_normalize.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 121, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 121, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 124, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 124, sass/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 127, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 127, sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 131, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 131, sass/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-/* line 134, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 134, sass/_normalize.scss */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-/* line 138, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 138, sass/_normalize.scss */
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0;
 }
 
-/* line 143, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 143, sass/_normalize.scss */
 button {
   overflow: visible;
 }
 
-/* line 146, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 146, sass/_normalize.scss */
 button, select {
   text-transform: none;
 }
 
-/* line 149, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 149, sass/_normalize.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-/* line 153, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 153, sass/_normalize.scss */
 button[disabled], html input[disabled] {
   cursor: default;
 }
 
-/* line 156, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 156, sass/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 160, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 160, sass/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 163, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 163, sass/_normalize.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 167, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 167, sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 170, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 170, sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 174, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 174, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 177, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 177, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 182, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 182, sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 186, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 186, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 189, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 189, sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 192, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 192, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 196, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_normalize.scss */
+/* line 196, sass/_normalize.scss */
 td, th {
   padding: 0;
 }
@@ -375,76 +375,76 @@ td, th {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_content-sidebar.scss */
+/* line 1, sass/layout/_content-sidebar.scss */
 .content-area {
   float: left;
   margin: 0 -20% 0 0;
   width: 100%;
 }
 
-/* line 7, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_content-sidebar.scss */
+/* line 7, sass/layout/_content-sidebar.scss */
 .site-main {
   margin: 0 20% 0 0;
 }
 
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_content-sidebar.scss */
+/* line 11, sass/layout/_content-sidebar.scss */
 .site-content .widget-area {
   float: right;
   overflow: hidden;
   width: 20%;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_content-sidebar.scss */
+/* line 17, sass/layout/_content-sidebar.scss */
 .site-footer {
   clear: both;
   width: 100%;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_sidebar-content.scss */
+/* line 1, sass/layout/_sidebar-content.scss */
 .content-area {
   float: right;
   margin: 0 0 0 -20%;
   width: 100%;
 }
 
-/* line 7, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_sidebar-content.scss */
+/* line 7, sass/layout/_sidebar-content.scss */
 .site-main {
   margin: 0 0 0 20%;
 }
 
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_sidebar-content.scss */
+/* line 11, sass/layout/_sidebar-content.scss */
 .site-content .widget-area {
   float: left;
   overflow: hidden;
   width: 20%;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_sidebar-content.scss */
+/* line 17, sass/layout/_sidebar-content.scss */
 .site-footer {
   clear: both;
   width: 100%;
 }
 
-/* line 4, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 4, sass/layout/_grid.scss */
 .row {
   text-align: justify;
   width: 100%;
   font-size: 0.1px;
   margin-bottom: 30px;
 }
-/* line 10, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 10, sass/layout/_grid.scss */
 .row:after {
   display: inline-block;
   width: 100%;
   content: '';
   clear: both;
 }
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 17, sass/layout/_grid.scss */
 .row.no-margin {
   margin: 0;
 }
 
-/* line 22, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 22, sass/layout/_grid.scss */
 [class*='col-'] {
   display: inline-block;
   text-align: left;
@@ -453,102 +453,102 @@ td, th {
   font-size: 1.7rem;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 22, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 22, sass/layout/_grid.scss */
   [class*='col-'] {
     margin-bottom: 30px !important;
     width: 100% !important;
   }
 }
-/* line 31, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 31, sass/layout/_grid.scss */
 [class*='col-'].no-margin {
   margin: 0;
 }
 
-/* line 36, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 36, sass/layout/_grid.scss */
 .col-100 {
   width: 100%;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 36, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 36, sass/layout/_grid.scss */
   .col-100 {
     margin-bottom: 30px !important;
   }
 }
 
-/* line 42, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 42, sass/layout/_grid.scss */
 .col-75 {
   width: 73.5%;
 }
 
-/* line 45, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 45, sass/layout/_grid.scss */
 .col-60 {
   width: 58.5%;
 }
 
-/* line 48, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 48, sass/layout/_grid.scss */
 .col-50 {
   width: 48.5%;
 }
 
-/* line 51, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 51, sass/layout/_grid.scss */
 .col-40 {
   width: 38.5%;
 }
 
-/* line 54, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 54, sass/layout/_grid.scss */
 .col-30 {
   width: 31.3%;
 }
 
-/* line 57, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 57, sass/layout/_grid.scss */
 .col-25 {
   width: 23.5%;
 }
 @media screen and (max-width: 64em) {
-  /* line 57, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 57, sass/layout/_grid.scss */
   .col-25 {
     width: 48.5% !important;
     margin-bottom: 30px !important;
   }
 }
 @media screen and (max-width: 48.75em) {
-  /* line 57, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 57, sass/layout/_grid.scss */
   .col-25 {
     width: 100% !important;
   }
 }
 
-/* line 67, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 67, sass/layout/_grid.scss */
 .col-50-break {
   width: 48.5%;
   display: inline-block;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 67, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 67, sass/layout/_grid.scss */
   .col-50-break {
     width: 100%;
   }
 }
 
-/* line 75, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 75, sass/layout/_grid.scss */
 .col-30-break {
   width: 31.5%;
   display: inline-block;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 75, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 75, sass/layout/_grid.scss */
   .col-30-break {
     width: 100%;
   }
 }
 
-/* line 83, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+/* line 83, sass/layout/_grid.scss */
 .col-25-break {
   width: 23.5%;
   display: inline-block;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 83, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/layout/_grid.scss */
+  /* line 83, sass/layout/_grid.scss */
   .col-25-break {
     width: 100%;
   }
@@ -558,7 +558,7 @@ td, th {
 # Typography
 --------------------------------------------------------------*/
 /*place font imports here*/
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_typography.scss */
+/* line 6, sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -572,7 +572,7 @@ textarea {
   line-height: 1.5;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #292929;
   font-family: "Times New Roman", Times, serif;
@@ -584,75 +584,75 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 11, sass/typography/_headings.scss */
 h1 {
   font-size: 46px;
   font-size: 4.6rem;
 }
 
-/* line 14, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 14, sass/typography/_headings.scss */
 h2 {
   font-size: 30px;
   font-size: 3rem;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 17, sass/typography/_headings.scss */
 h3 {
   font-size: 22px;
   font-size: 2.2rem;
 }
 
-/* line 20, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 20, sass/typography/_headings.scss */
 h4 {
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 23, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 23, sass/typography/_headings.scss */
 h5 {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 26, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 26, sass/typography/_headings.scss */
 h6 {
   font-size: 11px;
   font-size: 1.1rem;
 }
 
-/* line 29, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_headings.scss */
+/* line 29, sass/typography/_headings.scss */
 h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
   font-weight: 700;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 1, sass/typography/_copy.scss */
 p {
   font-size: 17px;
   font-size: 1.7rem;
   margin-bottom: 2.5%;
 }
 
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 6, sass/typography/_copy.scss */
 p.lead {
   font-size: 19px;
   font-size: 1.9rem;
   margin-bottom: 3%;
 }
 
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 11, sass/typography/_copy.scss */
 p.small {
   font-size: 14px;
   font-size: 1.4rem;
   margin-bottom: 3.5%;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 17, sass/typography/_copy.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 24, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 24, sass/typography/_copy.scss */
 dfn,
 cite,
 em,
@@ -660,17 +660,17 @@ i {
   font-style: italic;
 }
 
-/* line 28, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 28, sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 32, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 32, sass/typography/_copy.scss */
 address {
   margin: 0;
 }
 
-/* line 36, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 36, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -683,7 +683,7 @@ pre {
   padding: 1.6em;
 }
 
-/* line 51, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 51, sass/typography/_copy.scss */
 code,
 kbd,
 tt,
@@ -691,21 +691,21 @@ var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 56, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 56, sass/typography/_copy.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 62, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 62, sass/typography/_copy.scss */
 mark,
 ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 68, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 68, sass/typography/_copy.scss */
 sup,
 sub {
   font-size: 75%;
@@ -715,22 +715,22 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 76, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 76, sass/typography/_copy.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 80, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 80, sass/typography/_copy.scss */
 sub {
   top: .5ex;
 }
 
-/* line 84, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 84, sass/typography/_copy.scss */
 small {
   font-size: 75%;
 }
 
-/* line 88, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/typography/_copy.scss */
+/* line 88, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
@@ -738,33 +738,33 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 1, sass/elements/_elements.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 4, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 4, sass/elements/_elements.scss */
 ::-moz-selection {
   background: #b5b5b5;
   color: white;
   text-shadow: none;
 }
 
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 9, sass/elements/_elements.scss */
 ::-webkit-selection {
   background: #b5b5b5;
   color: white;
   text-shadow: none;
 }
 
-/* line 14, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 14, sass/elements/_elements.scss */
 ::selection {
   background: #b5b5b5;
   color: white;
   text-shadow: none;
 }
 
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 19, sass/elements/_elements.scss */
 blockquote, q {
   margin-bottom: 4%;
   padding: 20px 20px 20px 40px;
@@ -773,16 +773,16 @@ blockquote, q {
   line-height: 1.5;
   font-style: italic;
 }
-/* line 26, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 26, sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: none;
 }
-/* line 29, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 29, sass/elements/_elements.scss */
 blockquote p, q p {
   margin: 0;
 }
 
-/* line 33, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 33, sass/elements/_elements.scss */
 hr {
   width: 100%;
   margin: 50px 0;
@@ -791,12 +791,12 @@ hr {
   border-bottom: 1px solid #ecf0f1;
 }
 
-/* line 40, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 40, sass/elements/_elements.scss */
 img {
   height: auto;
   max-width: 100%;
 }
-/* line 44, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_elements.scss */
+/* line 44, sass/elements/_elements.scss */
 img:hover {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -805,7 +805,7 @@ img:hover {
   transition: all 0.2s ease;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 10px 0 30px;
   font-size: 16px;
@@ -813,57 +813,57 @@ ul, ol {
   line-height: 1.7;
 }
 
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 6, sass/elements/_lists.scss */
 ul ul, ol ol {
   margin: 0 20px;
 }
 
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 9, sass/elements/_lists.scss */
 ul {
   list-style: none;
 }
-/* line 12, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 12, sass/elements/_lists.scss */
 ul li {
   list-style: square outside;
   margin: 0 0 15px 35px;
   padding-left: 5px;
 }
 
-/* line 18, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 18, sass/elements/_lists.scss */
 ol {
   margin: 0 0 30px 0;
   line-height: 1.5;
 }
-/* line 22, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 22, sass/elements/_lists.scss */
 ol li {
   list-style: decimal outside;
   margin: 0 0 15px 25px;
   padding-left: 5px;
 }
 
-/* line 28, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 28, sass/elements/_lists.scss */
 li > ul, li > ol {
   margin-bottom: 0;
   margin-left: 1em;
 }
 
-/* line 32, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 32, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 35, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 35, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 39, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 39, sass/elements/_lists.scss */
 ul.arrows li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 44, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_lists.scss */
+/* line 44, sass/elements/_lists.scss */
 ul.arrows li:before {
   list-style: none;
   margin: 0 15px 15px 20px;
@@ -879,7 +879,7 @@ ul.arrows li:before {
   font-size: 1rem;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+/* line 1, sass/elements/_tables.scss */
 table {
   width: 100%;
   margin: 0;
@@ -889,31 +889,31 @@ table {
   overflow: hidden;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 1, sass/elements/_tables.scss */
   table {
     border: 0;
   }
-  /* line 12, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 12, sass/elements/_tables.scss */
   table thead, table th {
     display: none;
   }
-  /* line 15, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 15, sass/elements/_tables.scss */
   table tr {
     margin-bottom: 10px;
     display: block;
     border-bottom: 2px solid #ddd;
   }
-  /* line 20, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 20, sass/elements/_tables.scss */
   table td {
     display: block;
     text-align: right;
     border-bottom: 1px dotted #ccc;
   }
-  /* line 25, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 25, sass/elements/_tables.scss */
   table td:last-child {
     border-bottom: 0;
   }
-  /* line 28, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/elements/_tables.scss */
+  /* line 28, sass/elements/_tables.scss */
   table td:before {
     content: attr(data-label);
     float: left;
@@ -925,7 +925,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_buttons.scss */
+/* line 8, sass/forms/_buttons.scss */
 .btn,
 .btn:link,
 .btn:active,
@@ -951,7 +951,7 @@ input[type="submit"] {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_buttons.scss */
+/* line 19, sass/forms/_buttons.scss */
 .btn:focus, .btn:hover,
 .btn:link:focus,
 .btn:link:hover,
@@ -971,7 +971,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 17, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="telephone"],
@@ -996,7 +996,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 23, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 23, sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="telephone"]:focus,
@@ -1025,7 +1025,7 @@ textarea:focus {
   transition: all 0.2s ease;
 }
 
-/* line 37, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 37, sass/forms/_fields.scss */
 input[type="date"],
 input[type="month"],
 input[type="week"],
@@ -1035,25 +1035,25 @@ input[type="datetime-local"] {
   max-width: 200px;
 }
 
-/* line 40, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 40, sass/forms/_fields.scss */
 input[type="color"] {
   max-width: 100px;
   padding: 0;
   cursor: pointer;
 }
 
-/* line 45, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 45, sass/forms/_fields.scss */
 textarea {
   width: 100%;
   height: 100%;
 }
 
-/* line 50, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 50, sass/forms/_fields.scss */
 select::-ms-expand {
   display: none;
 }
 
-/* line 51, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_fields.scss */
+/* line 51, sass/forms/_fields.scss */
 .non-ie select {
   text-indent: 0.01px;
   text-overflow: '';
@@ -1062,7 +1062,7 @@ select::-ms-expand {
   background-clip: padding-box;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 1, sass/forms/_alerts.scss */
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -1073,31 +1073,31 @@ select::-ms-expand {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-/* line 7, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 7, sass/forms/_alerts.scss */
 .alert.alert-success {
   color: #8fbd3e;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
-/* line 12, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 12, sass/forms/_alerts.scss */
 .alert.alert-info {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 17, sass/forms/_alerts.scss */
 .alert.alert-warning {
   color: #f1c40f;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
-/* line 22, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 22, sass/forms/_alerts.scss */
 .alert.alert-error {
   color: #cc1e2b;
   background-color: #f2dede;
   border-color: #ebccd1;
 }
-/* line 27, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 27, sass/forms/_alerts.scss */
 .alert .close {
   float: right;
   font-size: 21px;
@@ -1111,7 +1111,7 @@ select::-ms-expand {
   -khtml-opacity: 0.2;
   opacity: 0.2;
 }
-/* line 36, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/forms/_alerts.scss */
+/* line 36, sass/forms/_alerts.scss */
 .alert .close:focus, .alert .close:hover {
   color: #292929;
   text-decoration: none;
@@ -1130,7 +1130,7 @@ select::-ms-expand {
 ## Links
 --------------------------------------------------------------*/
 /*GENERIC*/
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_links.scss */
+/* line 5, sass/navigation/_links.scss */
 a,
 a:link,
 a:active,
@@ -1144,7 +1144,7 @@ a:visited {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_links.scss */
+/* line 11, sass/navigation/_links.scss */
 a:focus, a:hover,
 a:link:focus,
 a:link:hover,
@@ -1162,14 +1162,14 @@ a:visited:hover {
   transition: all 0.2s ease;
 }
 
-/* line 21, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_links.scss */
+/* line 21, sass/navigation/_links.scss */
 a.secondary,
 a:link.secondary,
 a:active.secondary,
 a:visited.secondary {
   color: #292929;
 }
-/* line 24, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_links.scss */
+/* line 24, sass/navigation/_links.scss */
 a.secondary:focus, a.secondary:hover,
 a:link.secondary:focus,
 a:link.secondary:hover,
@@ -1183,7 +1183,7 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Slick Nav Core
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 1, sass/navigation/_slick-nav-core.scss */
 .slicknav_btn {
   position: relative;
   display: block;
@@ -1193,31 +1193,31 @@ a:visited.secondary:hover {
   line-height: 1.125em;
   cursor: pointer;
 }
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 9, sass/navigation/_slick-nav-core.scss */
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 0.188em;
 }
 
-/* line 13, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 13, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu {
   *zoom: 1;
 }
-/* line 15, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 15, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu .slicknav_menutxt {
   display: block;
   line-height: 1.188em;
   float: left;
 }
-/* line 20, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 20, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu .slicknav_icon {
   float: left;
   margin: 0.188em 0 0 0.438em;
 }
-/* line 24, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 24, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu .slicknav_no-text {
   margin: 0;
 }
-/* line 27, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 27, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu .slicknav_icon-bar {
   display: block;
   width: 1.125em;
@@ -1229,57 +1229,57 @@ a:visited.secondary:hover {
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 38, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 38, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu:before {
   content: " ";
   display: table;
 }
-/* line 42, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 42, sass/navigation/_slick-nav-core.scss */
 .slicknav_menu:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 48, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 48, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav {
   clear: both;
 }
-/* line 50, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 50, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav ul {
   display: block;
 }
-/* line 53, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 53, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav li {
   display: block;
 }
-/* line 56, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 56, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav .slicknav_arrow {
   font-size: 0.8em;
   margin: 0 0 0 0.4em;
 }
-/* line 60, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 60, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav .slicknav_item {
   cursor: pointer;
 }
-/* line 62, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 62, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav .slicknav_item a {
   display: inline;
 }
-/* line 66, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 66, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav .slicknav_row {
   display: block;
 }
-/* line 69, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 69, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav a {
   display: block;
 }
-/* line 72, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 72, sass/navigation/_slick-nav-core.scss */
 .slicknav_nav .slicknav_parent-link a {
   display: inline;
 }
 
-/* line 76, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/navigation/_slick-nav-core.scss */
+/* line 76, sass/navigation/_slick-nav-core.scss */
 .slicknav_brand {
   float: left;
 }
@@ -1288,7 +1288,7 @@ a:visited.secondary:hover {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-/* line 2, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_accessibility.scss */
+/* line 2, sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -1296,7 +1296,7 @@ a:visited.secondary:hover {
   width: 1px;
   overflow: hidden;
 }
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_accessibility.scss */
+/* line 9, sass/modules/_accessibility.scss */
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: white;
   border-radius: 3px;
@@ -1321,33 +1321,33 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_alignments.scss */
+/* line 1, sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_alignments.scss */
+/* line 6, sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_alignments.scss */
+/* line 11, sass/modules/_alignments.scss */
 .aligncenter {
   display: block;
   text-align: center;
   margin: 0 auto;
 }
 
-/* line 14, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_alignments.scss */
+/* line 14, sass/modules/_alignments.scss */
 .pull-left {
   float: left;
 }
 
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_alignments.scss */
+/* line 17, sass/modules/_alignments.scss */
 .pull-right {
   float: right;
 }
@@ -1355,7 +1355,7 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_clearings.scss */
+/* line 6, sass/modules/_clearings.scss */
 .clear,
 .entry-content,
 .comment-content,
@@ -1366,7 +1366,7 @@ a:visited.secondary:hover {
   zoom: 1;
 }
 
-/* line 15, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_clearings.scss */
+/* line 15, sass/modules/_clearings.scss */
 .clear:before,
 .entry-content:before,
 .comment-content:before,
@@ -1377,7 +1377,7 @@ a:visited.secondary:hover {
   display: table;
 }
 
-/* line 24, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_clearings.scss */
+/* line 24, sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -1392,18 +1392,18 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget. */
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 11, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -1414,42 +1414,42 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 1, sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
 
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 5, sass/site/primary/_posts-and-pages.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 10, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 10, sass/site/primary/_posts-and-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 15, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 15, sass/site/primary/_posts-and-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 21, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 21, sass/site/primary/_posts-and-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 25, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 25, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 29, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_posts-and-pages.scss */
+/* line 29, sass/site/primary/_posts-and-pages.scss */
 .post-details-wrapper {
   margin-bottom: 25px;
 }
@@ -1457,7 +1457,7 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
-/* line 2, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_asides.scss */
+/* line 2, sass/site/primary/_asides.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -1466,12 +1466,12 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_comments.scss */
+/* line 1, sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
-/* line 4, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/primary/_comments.scss */
+/* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -1479,18 +1479,18 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget. */
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/site/secondary/_widgets.scss */
+/* line 11, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -1500,7 +1500,7 @@ a:visited.secondary:hover {
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 /* Older / Newer Posts Navigation (always hidden) */
-/* line 4, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_infinite-scroll.scss */
+/* line 4, sass/modules/_infinite-scroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1508,7 +1508,7 @@ a:visited.secondary:hover {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/modules/_infinite-scroll.scss */
+/* line 9, sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -1516,7 +1516,7 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-/* line 3, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_media.scss */
+/* line 3, sass/media/_media.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -1527,7 +1527,7 @@ a:visited.secondary:hover {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_media.scss */
+/* line 11, sass/media/_media.scss */
 .responsive-object {
   position: relative;
   padding-bottom: 67.5%;
@@ -1536,7 +1536,7 @@ a:visited.secondary:hover {
   overflow: hidden;
 }
 
-/* line 21, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_media.scss */
+/* line 21, sass/media/_media.scss */
 .responsive-object iframe,
 .responsive-object object,
 .responsive-object embed {
@@ -1550,23 +1550,23 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_captions.scss */
+/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_captions.scss */
+/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   text-align: center;
   margin: 0 auto;
 }
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_captions.scss */
+/* line 8, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 12, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_captions.scss */
+/* line 12, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -1574,52 +1574,52 @@ a:visited.secondary:hover {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 100%;
 }
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 11, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
-/* line 15, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 15, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 19, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
-/* line 23, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 23, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
-/* line 27, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 27, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
-/* line 31, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 31, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
-/* line 35, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 35, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
-/* line 39, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 39, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 44, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/media/_galleries.scss */
+/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
@@ -1631,16 +1631,12 @@ a:visited.secondary:hover {
 # BigWing Theme
 --------------------------------------------------------------*/
 /* LAYOUT */
-<<<<<<< HEAD
 /* line 2, sass/_theme/_theme-layout.scss */
 body {
   background-color: #ecf0f1;
 }
 
 /* line 5, sass/_theme/_theme-layout.scss */
-=======
-/* line 2, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 #body-wrap {
   position: relative;
   margin: 0 auto;
@@ -1649,16 +1645,12 @@ body {
   background-color: white;
 }
 
-<<<<<<< HEAD
 /* line 12, sass/_theme/_theme-layout.scss */
 .container-wrapper {
   padding: 0 2.5%;
 }
 
 /* line 15, sass/_theme/_theme-layout.scss */
-=======
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 .content-wrapper {
   margin: 0 auto;
   padding: 60px 0;
@@ -1667,31 +1659,19 @@ body {
   clear: both;
   zoom: 1;
 }
-<<<<<<< HEAD
 /* line 22, sass/_theme/_theme-layout.scss */
-=======
-/* line 14, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 .content-wrapper:before {
   content: "";
   display: table;
 }
-<<<<<<< HEAD
 /* line 25, sass/_theme/_theme-layout.scss */
-=======
-/* line 17, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 .content-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
 
-<<<<<<< HEAD
 /* line 29, sass/_theme/_theme-layout.scss */
-=======
-/* line 21, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 #main-content {
   position: relative;
   display: block;
@@ -1701,22 +1681,14 @@ body {
   width: 100%;
   max-width: 1170px;
 }
-<<<<<<< HEAD
 /* line 37, sass/_theme/_theme-layout.scss */
-=======
-/* line 29, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 #main-content.sidebar {
   float: left;
   width: 77%;
   max-width: 900px;
 }
 
-<<<<<<< HEAD
 /* line 43, sass/_theme/_theme-layout.scss */
-=======
-/* line 35, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 #sidebar {
   display: block;
   vertical-align: top;
@@ -1727,18 +1699,14 @@ body {
   max-width: 100%;
 }
 @media screen and (max-width: 48.75em) {
-<<<<<<< HEAD
   /* line 43, sass/_theme/_theme-layout.scss */
-=======
-  /* line 35, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/_theme-layout.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   #sidebar {
     width: 100%;
     max-width: 100%;
   }
 }
 
-/* line 4, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 4, sass/_theme/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 select,
@@ -1766,7 +1734,7 @@ textarea {
   font-size: 17px;
   font-size: 1.7rem;
 }
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 19, sass/_theme/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus,
@@ -1782,7 +1750,7 @@ textarea:focus {
   transition: all 0.2s ease;
 }
 
-/* line 28, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 28, sass/_theme/forms/_fields.scss */
 input.info {
   border-color: #31708f !important;
   background: #31708f;
@@ -1790,7 +1758,7 @@ input.info {
   background: rgba(49, 112, 143, 0.3);
   color: #31708f !important;
 }
-/* line 33, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 33, sass/_theme/forms/_fields.scss */
 input.info:focus {
   background: #31708f;
   /* The Fallback */
@@ -1799,7 +1767,7 @@ input.info:focus {
   border-left: 5px solid #31708f;
 }
 
-/* line 41, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 41, sass/_theme/forms/_fields.scss */
 input.success {
   border-color: #8fbd3e !important;
   background: #8fbd3e;
@@ -1807,7 +1775,7 @@ input.success {
   background: rgba(143, 189, 62, 0.3);
   color: #8fbd3e !important;
 }
-/* line 46, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 46, sass/_theme/forms/_fields.scss */
 input.success:focus {
   background: #8fbd3e;
   /* The Fallback */
@@ -1816,7 +1784,7 @@ input.success:focus {
   border-left: 5px solid #8fbd3e;
 }
 
-/* line 54, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 54, sass/_theme/forms/_fields.scss */
 input.error {
   border-color: #cc1e2b !important;
   background: #cc1e2b;
@@ -1824,7 +1792,7 @@ input.error {
   background: rgba(204, 30, 43, 0.3);
   color: #cc1e2b !important;
 }
-/* line 59, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 59, sass/_theme/forms/_fields.scss */
 input.error:focus {
   background: #cc1e2b;
   /* The Fallback */
@@ -1833,7 +1801,7 @@ input.error:focus {
   border-left: 5px solid #cc1e2b;
 }
 
-/* line 67, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 67, sass/_theme/forms/_fields.scss */
 input.warning {
   border-color: #f1c40f !important;
   background: #f1c40f;
@@ -1841,7 +1809,7 @@ input.warning {
   background: rgba(241, 196, 15, 0.3);
   color: #f1c40f !important;
 }
-/* line 72, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_fields.scss */
+/* line 72, sass/_theme/forms/_fields.scss */
 input.warning:focus {
   background: #f1c40f;
   /* The Fallback */
@@ -1850,7 +1818,7 @@ input.warning:focus {
   border-left: 5px solid #f1c40f;
 }
 
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_buttons.scss */
+/* line 8, sass/_theme/forms/_buttons.scss */
 .btn,
 .btn:link,
 .btn:active,
@@ -1873,7 +1841,7 @@ input[type="submit"] {
   background-color: rgba(41, 41, 41, 0.9);
   font-weight: 300;
 }
-/* line 23, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_buttons.scss */
+/* line 23, sass/_theme/forms/_buttons.scss */
 .btn:focus, .btn:hover,
 .btn:link:focus,
 .btn:link:hover,
@@ -1893,7 +1861,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-/* line 37, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_buttons.scss */
+/* line 37, sass/_theme/forms/_buttons.scss */
 .btn-alt,
 .btn-alt:link,
 .btn-alt:active,
@@ -1906,7 +1874,7 @@ input[type="submit"].btn-alt {
   border: 1px solid #292929;
   background-color: #292929;
 }
-/* line 43, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/forms/_buttons.scss */
+/* line 43, sass/_theme/forms/_buttons.scss */
 .btn-alt:focus, .btn-alt:hover,
 .btn-alt:link:focus,
 .btn-alt:link:hover,
@@ -1926,50 +1894,50 @@ input[type="submit"].btn-alt:hover {
   color: white;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_header.scss */
+/* line 1, sass/_theme/header/_header.scss */
 #top-utility-wrap {
   padding: 10px 0;
   border-bottom: 1px solid #b5b5b5;
   clear: both;
   zoom: 1;
 }
-/* line 5, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_header.scss */
+/* line 5, sass/_theme/header/_header.scss */
 #top-utility-wrap:before {
   content: "";
   display: table;
 }
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_header.scss */
+/* line 8, sass/_theme/header/_header.scss */
 #top-utility-wrap:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 6, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 6, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a {
   color: #b5b5b5;
 }
-/* line 7, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 7, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a:link {
   color: #b5b5b5;
 }
-/* line 8, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 8, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a:visited {
   color: #b5b5b5;
 }
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 9, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a:active {
   color: #b5b5b5;
 }
-/* line 10, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 10, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a:focus {
   color: #292929;
 }
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_mixins/_mixin-anchor-colors.scss */
+/* line 11, sass/_mixins/_mixin-anchor-colors.scss */
 #top-utility-wrap a:hover {
   color: #292929;
 }
 
-/* line 14, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_header.scss */
+/* line 14, sass/_theme/header/_header.scss */
 #logo-wrap {
   width: 100%;
   display: block;
@@ -1977,16 +1945,12 @@ input[type="submit"].btn-alt:hover {
   vertical-align: middle;
   padding: 30px 0;
 }
-<<<<<<< HEAD
 /* line 20, sass/_theme/header/_header.scss */
-=======
-/* line 19, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_header.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 #logo-wrap img {
   max-width: 300px;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_social-nav.scss */
+/* line 1, sass/_theme/header/_social-nav.scss */
 #social-wrap {
   display: inline-block;
   width: 40%;
@@ -1994,7 +1958,7 @@ input[type="submit"].btn-alt:hover {
   margin: 0;
   line-height: 1.5;
 }
-/* line 7, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_social-nav.scss */
+/* line 7, sass/_theme/header/_social-nav.scss */
 #social-wrap li {
   font-size: 14px;
   font-size: 1.4rem;
@@ -2005,7 +1969,7 @@ input[type="submit"].btn-alt:hover {
   margin-right: 15px;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_top-utility-nav.scss */
+/* line 1, sass/_theme/header/_top-utility-nav.scss */
 #header-top-utility-nav {
   display: inline-block;
   width: 60%;
@@ -2016,7 +1980,7 @@ input[type="submit"].btn-alt:hover {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 9, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_top-utility-nav.scss */
+/* line 9, sass/_theme/header/_top-utility-nav.scss */
 #header-top-utility-nav li {
   margin: 0;
   padding: 0;
@@ -2025,7 +1989,7 @@ input[type="submit"].btn-alt:hover {
   margin-left: 15px;
 }
 
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 1, sass/_theme/header/_slick-nav.scss */
 .slicknav_menu {
   display: none;
   position: absolute;
@@ -2033,12 +1997,12 @@ input[type="submit"].btn-alt:hover {
   z-index: 9999;
 }
 @media screen and (max-width: 48.75em) {
-  /* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+  /* line 1, sass/_theme/header/_slick-nav.scss */
   .slicknav_menu {
     display: block;
   }
 }
-/* line 10, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 10, sass/_theme/header/_slick-nav.scss */
 .slicknav_menu .slicknav_icon-bar {
   background-color: white;
   width: 20px;
@@ -2051,7 +2015,7 @@ input[type="submit"].btn-alt:hover {
   -o-border-radius: 0;
 }
 
-/* line 18, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 18, sass/_theme/header/_slick-nav.scss */
 .slicknav_btn {
   margin: 0;
   padding: 0;
@@ -2062,7 +2026,7 @@ input[type="submit"].btn-alt:hover {
   left: 25px;
 }
 
-/* line 27, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 27, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav {
   position: relative;
   z-index: 9999;
@@ -2073,7 +2037,7 @@ input[type="submit"].btn-alt:hover {
   list-style: none;
   top: 60px;
 }
-/* line 37, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 37, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav ul {
   list-style: none;
   overflow: hidden;
@@ -2083,7 +2047,7 @@ input[type="submit"].btn-alt:hover {
   font-size: 19px;
   font-size: 1.9rem;
 }
-/* line 45, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 45, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav li {
   border-top: 1px solid #292929;
   position: relative;
@@ -2095,7 +2059,7 @@ input[type="submit"].btn-alt:hover {
   display: block;
   width: 100%;
 }
-/* line 56, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 56, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav li:after {
   display: inline-block;
   float: right;
@@ -2111,7 +2075,7 @@ input[type="submit"].btn-alt:hover {
   vertical-align: middle;
   line-height: 100%;
 }
-/* line 71, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 71, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav li.menu-item-has-children:after {
   display: inline-block;
   float: right;
@@ -2129,7 +2093,7 @@ input[type="submit"].btn-alt:hover {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 88, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 88, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav a {
   font-size: 18px;
   font-size: 1.8rem;
@@ -2143,54 +2107,54 @@ input[type="submit"].btn-alt:hover {
   padding: 20px 4.75% 20px;
   position: relative;
 }
-/* line 100, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 100, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav a:hover {
   background: #292929;
   color: #b5b5b5;
 }
-/* line 105, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 105, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .slicknav_arrow {
   display: none;
 }
-/* line 108, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 108, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .sub-menu {
   background: #292929;
 }
-/* line 111, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 111, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .sub-menu li {
   border-color: white;
 }
-/* line 114, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 114, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .sub-menu li:after {
   font-size: 15px;
   font-size: 1.5rem;
 }
-/* line 117, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 117, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .sub-menu li a {
   padding: 15px 0px 15px 50px;
   font-size: 15px;
   font-size: 1.5rem;
 }
-/* line 121, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 121, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .sub-menu li a:hover {
   background: white;
 }
-/* line 127, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 127, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .slicknav_txtnode {
   margin-left: 15px;
 }
-/* line 130, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 130, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .slicknav_item a {
   padding: 0;
   margin: 0;
 }
-/* line 134, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 134, sass/_theme/header/_slick-nav.scss */
 .slicknav_nav .slicknav_parent-link a {
   padding: 0;
   margin: 0;
 }
 
-/* line 139, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 139, sass/_theme/header/_slick-nav.scss */
 .slicknav_brand {
   font-size: 18px;
   line-height: 30px;
@@ -2198,7 +2162,7 @@ input[type="submit"].btn-alt:hover {
   height: 44px;
 }
 
-/* line 145, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 145, sass/_theme/header/_slick-nav.scss */
 .slicknav_icon-bar {
   -moz-transform: rotate3d(0, 0, 1, 0);
   -webkit-transform: rotate3d(0, 0, 1, 0);
@@ -2212,7 +2176,7 @@ input[type="submit"].btn-alt:hover {
   transition: all 0.2s ease;
 }
 
-/* line 154, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 154, sass/_theme/header/_slick-nav.scss */
 .slicknav_open .slicknav_icon-bar {
   margin: 0;
   padding: 0;
@@ -2227,7 +2191,7 @@ input[type="submit"].btn-alt:hover {
   -khtml-opacity: 0;
   opacity: 0;
 }
-/* line 160, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 160, sass/_theme/header/_slick-nav.scss */
 .slicknav_open .slicknav_icon-bar:first-child {
   top: 6px;
   position: relative;
@@ -2247,7 +2211,7 @@ input[type="submit"].btn-alt:hover {
   -khtml-opacity: 1;
   opacity: 1;
 }
-/* line 175, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_slick-nav.scss */
+/* line 175, sass/_theme/header/_slick-nav.scss */
 .slicknav_open .slicknav_icon-bar:last-child {
   top: -6px;
   position: relative;
@@ -2268,12 +2232,8 @@ input[type="submit"].btn-alt:hover {
   opacity: 1;
 }
 
-<<<<<<< HEAD
 /* main style */
 /* line 2, sass/_theme/header/_nav.scss */
-=======
-/* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 .nav {
   position: relative;
   width: 100%;
@@ -2295,16 +2255,11 @@ input[type="submit"].btn-alt:hover {
   display: inline-block;
 }
 @media screen and (max-width: 48.75em) {
-<<<<<<< HEAD
   /* line 2, sass/_theme/header/_nav.scss */
-=======
-  /* line 1, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   .nav {
     display: none;
   }
 }
-<<<<<<< HEAD
 
 /* top level nav styles */
 /* line 25, sass/_theme/header/_nav.scss */
@@ -2312,37 +2267,23 @@ input[type="submit"].btn-alt:hover {
   padding: 0;
   width: 95%;
   max-width: 1200px;
-=======
-/* line 11, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav ul {
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   display: block;
   margin: 0 auto;
   text-align: justify;
   font-size: 0.1px;
   height: inherit;
   line-height: inherit;
+  /* 2nd level dropdown nav styles */
 }
-<<<<<<< HEAD
 /* line 35, sass/_theme/header/_nav.scss */
 #menu-main:after {
-=======
-/* line 20, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav ul:after {
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   content: '';
   height: 0px;
   width: 100%;
   display: inline-block;
 }
-<<<<<<< HEAD
 /* line 41, sass/_theme/header/_nav.scss */
 #menu-main > li {
-=======
-/* line 27, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav li {
-  list-style: none;
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2366,20 +2307,37 @@ input[type="submit"].btn-alt:hover {
   color: #292929;
   text-decoration: none;
 }
-<<<<<<< HEAD
 /* line 62, sass/_theme/header/_nav.scss */
 #menu-main li:hover > a, #menu-main > a:focus, #menu-main > a:hover {
   color: #b5b5b5;
   background-color: #292929;
 }
-
-/* 2nd level dropdown nav styles */
+/* line 65, sass/_theme/header/_nav.scss */
+#menu-main li:hover > a ul li > ul, #menu-main > a:focus ul li > ul, #menu-main > a:hover ul li > ul {
+  display: none;
+}
 /* line 68, sass/_theme/header/_nav.scss */
-#menu-main > li {
+#menu-main li:hover > a ul li:hover > ul, #menu-main > a:focus ul li:hover > ul, #menu-main > a:hover ul li:hover > ul {
+  display: block;
+  position: absolute;
+  border: none;
+  text-align: center;
+  height: auto;
+  width: 180px;
+  left: 50%;
+  margin-left: -90px;
+}
+/* line 78, sass/_theme/header/_nav.scss */
+#menu-main li:hover > a ul ul li, #menu-main > a:focus ul ul li, #menu-main > a:hover ul ul li {
+  display: block;
+  position: relative;
+}
+/* line 84, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li {
   /* display 2nd level dropdown */
 }
-/* line 69, sass/_theme/header/_nav.scss */
-#menu-main > li > ul {
+/* line 85, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul {
   position: absolute;
   left: -9999px;
   border-top: 0;
@@ -2392,8 +2350,8 @@ input[type="submit"].btn-alt:hover {
   -khtml-opacity: 0;
   opacity: 0;
 }
-/* line 77, sass/_theme/header/_nav.scss */
-#menu-main > li > ul > li {
+/* line 93, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul > li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2403,8 +2361,8 @@ input[type="submit"].btn-alt:hover {
   text-align: left;
   width: 100%;
 }
-/* line 87, sass/_theme/header/_nav.scss */
-#menu-main > li > ul > li > a:link, #menu-main > li > ul > li > a:visited, #menu-main > li > ul > li > a:active {
+/* line 103, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul > li > a:link, #menu-main #menu-main > li > ul > li > a:visited, #menu-main #menu-main > li > ul > li > a:active {
   width: 100%;
   padding: 0 10px;
   display: block;
@@ -2414,27 +2372,27 @@ input[type="submit"].btn-alt:hover {
   vertical-align: middle;
   color: #b5b5b5;
 }
-/* line 98, sass/_theme/header/_nav.scss */
-#menu-main > li > ul > li > a:hover, #menu-main > li > ul > li > a:focus {
+/* line 114, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul > li > a:hover, #menu-main #menu-main > li > ul > li > a:focus {
   background: #b5b5b5;
   /* The Fallback */
   background: rgba(181, 181, 181, 0.8);
   color: white;
 }
-/* line 103, sass/_theme/header/_nav.scss */
-#menu-main > li > ul > li:after {
+/* line 119, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul > li:after {
   content: ' ';
   height: 0px;
   width: 100%;
   display: flex;
   border-top: 1px solid #b5b5b5;
 }
-/* line 110, sass/_theme/header/_nav.scss */
-#menu-main > li > ul > li:last-child:after {
+/* line 126, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li > ul > li:last-child:after {
   border: none;
 }
-/* line 116, sass/_theme/header/_nav.scss */
-#menu-main > li:hover > ul {
+/* line 132, sass/_theme/header/_nav.scss */
+#menu-main #menu-main > li:hover > ul {
   visibility: visible;
   left: 0;
   top: 70px;
@@ -2446,11 +2404,11 @@ input[type="submit"].btn-alt:hover {
 }
 
 /* 3rd level dropdown nav styles */
-/* line 124, sass/_theme/header/_nav.scss */
+/* line 141, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li {
   /* display 3rd level dropdown */
 }
-/* line 125, sass/_theme/header/_nav.scss */
+/* line 142, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul {
   position: absolute;
   left: -9999px;
@@ -2458,18 +2416,6 @@ input[type="submit"].btn-alt:hover {
   background-color: #292929;
   margin: 0;
   padding: 10px 0;
-=======
-/* line 35, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav li:before {
-  display: none;
-}
-/* line 42, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav a,
-.nav a:link,
-.nav a:visited,
-.nav a:active {
-  display: inline-block;
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
   height: 100%;
   filter: alpha(opacity=0);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2478,8 +2424,7 @@ input[type="submit"].btn-alt:hover {
   opacity: 0;
   border-left: 1px solid #b5b5b5;
 }
-<<<<<<< HEAD
-/* line 135, sass/_theme/header/_nav.scss */
+/* line 152, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul > li {
   margin: 0;
   padding: 0;
@@ -2490,7 +2435,7 @@ input[type="submit"].btn-alt:hover {
   width: 100%;
   padding: 10px 0;
 }
-/* line 145, sass/_theme/header/_nav.scss */
+/* line 162, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul > li > a:link, #menu-main > li > ul > li > ul > li > a:visited, #menu-main > li > ul > li > ul > li > a:active {
   width: 100%;
   padding: 0 10px;
@@ -2501,14 +2446,14 @@ input[type="submit"].btn-alt:hover {
   vertical-align: middle;
   color: #b5b5b5;
 }
-/* line 156, sass/_theme/header/_nav.scss */
+/* line 173, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul > li > a:hover, #menu-main > li > ul > li > ul > li > a:focus {
   background: #b5b5b5;
   /* The Fallback */
   background: rgba(181, 181, 181, 0.8);
   color: white;
 }
-/* line 161, sass/_theme/header/_nav.scss */
+/* line 178, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul > li:after {
   content: ' ';
   height: 0px;
@@ -2516,11 +2461,11 @@ input[type="submit"].btn-alt:hover {
   display: flex;
   border-top: 1px solid #b5b5b5;
 }
-/* line 168, sass/_theme/header/_nav.scss */
+/* line 185, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li > ul > li:last-child:after {
   border: none;
 }
-/* line 174, sass/_theme/header/_nav.scss */
+/* line 191, sass/_theme/header/_nav.scss */
 #menu-main > li > ul > li:hover > ul {
   visibility: visible;
   filter: alpha(opacity=100);
@@ -2529,35 +2474,4 @@ input[type="submit"].btn-alt:hover {
   -khtml-opacity: 1;
   opacity: 1;
   left: 100%;
-=======
-/* line 49, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav a:focus,
-.nav a:hover,
-.nav li.current-menu-item {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-/* line 52, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav ul li > ul {
-  display: none;
-}
-/* line 55, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav ul li:hover > ul {
-  display: block;
-  position: absolute;
-  border: none;
-  text-align: center;
-  height: auto;
-  width: 180px;
-  left: 50%;
-  margin-left: -90px;
-}
-/* line 66, /Applications/MAMP/htdocs/nest/nest-starter-theme/sass/_theme/header/_nav.scss */
-.nav ul ul li {
-  display: block;
-  position: relative;
->>>>>>> 6d425f7e2f87809d9b19952caf8ec9d108159ab3
 }
