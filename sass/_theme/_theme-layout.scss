@@ -1,14 +1,22 @@
 /* LAYOUT */
+body {
+    background-color:$color__background-body;
+}
 #body-wrap {
-	position: relative;
-	margin: 0 auto;
-	width: $size__site-main;
-	max-width: $size__site-main-max;
+    position: relative;
+    margin: 0 auto;
+    width: $size__site-main;
+    max-width: $size__site-main-max;
+    background-color:$color__background-content;
+}
+.container-wrapper {
+    padding:0 2.5%;
 }
 .content-wrapper {
 	margin: 0 auto;
-	width: $size__site-content;
-	max-width: $size__site-content-max;
+    padding:60px 0;
+    width: $size__site-content;
+    max-width: $size__site-content-max;
     @include clearfix();
 
     &:before {
@@ -24,13 +32,13 @@
     vertical-align: top;
     height: 100%;
     width:100%;
-	width: $size__site-content;
-	max-width: $size__site-content-max;
-	&.sidebar {
-	    float: left;
-	    width: $size__site-content-with-sidebar;
-	    max-width: $size__site-content-max-with-sidebar;
-	}
+    width: $size__site-content;
+    max-width: $size__site-content-max;
+    &.sidebar {
+     float: left;
+     width: $size__site-content-with-sidebar;
+     max-width: $size__site-content-max-with-sidebar;
+ }
 }
 #sidebar {
     display: block;
@@ -38,8 +46,8 @@
     float: $sidebar__position;
     z-index: 9999;
     height: 100%;
-	width: $size__site-sidebar;
-	max-width: $size__site-sidebar-max;
+    width: $size__site-sidebar;
+    max-width: $size__site-sidebar-max;
 
     @include break-point-mobile {
         width:100%;

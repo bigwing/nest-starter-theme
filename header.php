@@ -29,9 +29,10 @@
 		}
 		?>
 	</head>
-	<body <?php body_class(); ?> id="body-wrap">
+	<body <?php body_class(); ?>>
+		<div id="body-wrap">
 		<?php do_action( 'body_open' ); ?>
-		<header class="header clear content-wrapper" role="banner">
+		<header class="header container-wrapper" role="banner">
 			<div id="top-utility-wrap">
 				<?php nest_get_social(); ?>
 				<?php wp_nav_menu( array(
@@ -43,7 +44,7 @@
 				</div><!--top-utility-wrap-->
 				<a id="logo-wrap" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
 				<div id="mobile-nav"></div>
-				<nav class="nav clear" role="navigation">
+				<nav class="nav" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'header-nav', 'container' => false ) ); ?>
 				</nav><!--nav-->
 		</header><!--header-->

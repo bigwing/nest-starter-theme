@@ -40,5 +40,6 @@
 /* Use Google Analytics Plugin for Google Analytics: https://wordpress.org/plugins/google-analytics-for-wordpress/
 */
 ?>
+</div><!--body-wrap-->
 </body>
 </html>
