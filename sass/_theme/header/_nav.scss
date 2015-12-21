@@ -80,6 +80,7 @@
 			position: relative;
 		}
 	}
+}
 /* 2nd level dropdown nav styles */
 #menu-main > li  {
 	& > ul {
@@ -135,7 +136,6 @@
 		top:70px;
 		@include opacity(1);
 	}
-}
 }
 /* 3rd level dropdown nav styles */
 #menu-main > li > ul > li {

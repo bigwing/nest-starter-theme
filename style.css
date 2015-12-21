@@ -2273,7 +2273,6 @@ input[type="submit"].btn-alt:hover {
   font-size: 0.1px;
   height: inherit;
   line-height: inherit;
-  /* 2nd level dropdown nav styles */
 }
 /* line 35, sass/_theme/header/_nav.scss */
 #menu-main:after {
@@ -2332,12 +2331,14 @@ input[type="submit"].btn-alt:hover {
   display: block;
   position: relative;
 }
-/* line 84, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li {
+
+/* 2nd level dropdown nav styles */
+/* line 85, sass/_theme/header/_nav.scss */
+#menu-main > li {
   /* display 2nd level dropdown */
 }
-/* line 85, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul {
+/* line 86, sass/_theme/header/_nav.scss */
+#menu-main > li > ul {
   position: absolute;
   left: -9999px;
   border-top: 0;
@@ -2350,8 +2351,8 @@ input[type="submit"].btn-alt:hover {
   -khtml-opacity: 0;
   opacity: 0;
 }
-/* line 93, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul > li {
+/* line 94, sass/_theme/header/_nav.scss */
+#menu-main > li > ul > li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2361,8 +2362,8 @@ input[type="submit"].btn-alt:hover {
   text-align: left;
   width: 100%;
 }
-/* line 103, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul > li > a:link, #menu-main #menu-main > li > ul > li > a:visited, #menu-main #menu-main > li > ul > li > a:active {
+/* line 104, sass/_theme/header/_nav.scss */
+#menu-main > li > ul > li > a:link, #menu-main > li > ul > li > a:visited, #menu-main > li > ul > li > a:active {
   width: 100%;
   padding: 0 10px;
   display: block;
@@ -2372,27 +2373,27 @@ input[type="submit"].btn-alt:hover {
   vertical-align: middle;
   color: #b5b5b5;
 }
-/* line 114, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul > li > a:hover, #menu-main #menu-main > li > ul > li > a:focus {
+/* line 115, sass/_theme/header/_nav.scss */
+#menu-main > li > ul > li > a:hover, #menu-main > li > ul > li > a:focus {
   background: #b5b5b5;
   /* The Fallback */
   background: rgba(181, 181, 181, 0.8);
   color: white;
 }
-/* line 119, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul > li:after {
+/* line 120, sass/_theme/header/_nav.scss */
+#menu-main > li > ul > li:after {
   content: ' ';
   height: 0px;
   width: 100%;
   display: flex;
   border-top: 1px solid #b5b5b5;
 }
-/* line 126, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li > ul > li:last-child:after {
+/* line 127, sass/_theme/header/_nav.scss */
+#menu-main > li > ul > li:last-child:after {
   border: none;
 }
-/* line 132, sass/_theme/header/_nav.scss */
-#menu-main #menu-main > li:hover > ul {
+/* line 133, sass/_theme/header/_nav.scss */
+#menu-main > li:hover > ul {
   visibility: visible;
   left: 0;
   top: 70px;
