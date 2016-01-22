@@ -32,12 +32,9 @@
 	font-size: 0.1px;
 	height: inherit;
 	line-height: inherit;
-	&:after {
-		content: '';
-		height: 0px;
-		width: 100%;
-		display: inline-block;
-	}
+ 	@include flexbox;
+    @include align-items( center );
+    @include justify-content( space-between );
 	& > li {
 		@include clear-list-style;
 		display: inline-block;
