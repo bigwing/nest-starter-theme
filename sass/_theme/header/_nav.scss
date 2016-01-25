@@ -32,9 +32,10 @@
 	font-size: 0.1px;
 	height: inherit;
 	line-height: inherit;
- 	@include flexbox;
-    @include align-items( center );
-    @include justify-content( space-between );
+	@include flexbox;
+	@include align-items( center );
+	@include justify-content( space-between );
+	@include flex-wrap( wrap );
 	& > li {
 		@include clear-list-style;
 		display: inline-block;
@@ -42,6 +43,8 @@
 		height: 100%;
 		@include font-size(1.6);
 		white-space: nowrap;
+		text-align: center;
+		@include flex-grow( 1 );
 	}
 	& > a,
 	& > a:link,
