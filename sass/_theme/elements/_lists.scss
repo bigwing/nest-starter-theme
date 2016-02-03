@@ -1,0 +1,21 @@
+ul.arrows {
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		&:before {
+			list-style: none;
+			margin: 0 15px 15px 20px;
+			padding-right: 5px;
+			position: relative;
+			top: 0;
+			right: 0;
+			z-index: 400;
+			font-family: FontAwesome;
+			content: "\f178";
+			display: inline-block;
+			@include font-size(1.0);
+		}
+	}
+}

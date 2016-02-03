@@ -4,7 +4,7 @@ a:link,
 a:active,
 a:visited {
 	color: $color__link;
-	text-decoration: none;
+	text-decoration: underline;
 	outline: none;
 	@include fade;
 
