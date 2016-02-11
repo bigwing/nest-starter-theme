@@ -74,6 +74,11 @@ body.login div#login h1 a:focus, body.login div#login h1 a:hover {
     -moz-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
+.login h1 a {
+    background-image: url(img/logo@2x.png) !important;
+    background-size: 100% !important;
+    -webkit-background-size: 100% !important;
+}
 .login #nav a, .login #backtoblog a {
     color: #aaa !important;
     text-shadow: none;
