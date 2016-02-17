@@ -45,39 +45,23 @@
 		white-space: nowrap;
 		text-align: center;
 		@include flex-grow( 1 );
-	}
-	& > a,
-	& > a:link,
-	& > a:visited,
-	& > a:active {
-		display: block;
-		text-decoration: none;
-		display: block;
-		@include fade();
-		color:$color__link-nav;
-		text-decoration:none;
-	}
-	li:hover > a,
-	& > a:focus,
-	& > a:hover {
-		color:$color__link-nav-hover;
-		background-color:$color__link-nav-bg-hover;
-		ul li > ul {
-			display: none;
-		}
-		ul li:hover > ul{
+		
+		& > a,
+		& > a:link,
+		& > a:visited,
+		& > a:active {
 			display: block;
-			position: absolute;
-			border:none;
-			text-align: center;
-			height: auto;
-			width: 180px;
-			left: 50%;
-			margin-left: -90px;
-		}
-		ul ul li {
+			text-decoration: none;
 			display: block;
-			position: relative;
+			@include fade();
+			color:$color__link-nav;
+			text-decoration:none;
+		}
+		li:hover > a,
+		& > a:focus,
+		& > a:hover {
+			color:$color__link-nav-hover;
+			background-color:$color__link-nav-bg-hover;
 		}
 	}
 }

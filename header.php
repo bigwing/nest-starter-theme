@@ -45,6 +45,6 @@
 				<a id="logo-wrap" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
 				<div id="mobile-nav"></div>
 				<nav class="nav" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'header-nav', 'container' => false, 'menu_id' => 'main-nav' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'header-nav', 'container' => false, 'menu_id' => 'menu-main' ) ); ?>
 				</nav><!--nav-->
 		</header><!--header-->
