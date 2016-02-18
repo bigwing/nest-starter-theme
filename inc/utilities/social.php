@@ -1,11 +1,8 @@
 <?php
 class nest_Social {
 	private $social_networks = array();
-	
 	public function __construct() {
-		
 	}
-	
 	private function init() {
 		$this->social_networks = array(
 		'bitbucket.org'      => array( 'name' => 'Bitbucket',      'class' => 'bitbucket',     'icon' => 'fa-bitbucket',     'icon-sign' => 'fa-bitbucket-sign'   ),
@@ -43,10 +40,12 @@ class nest_Social {
 			return '';
 		}
 		$html = '<ul id="social-wrap">';
-		foreach( $urls as $url ) {
+		foreach( $urls as $index => $url_data ) {
+			$url = $url_data[ 'url' ];
+			$placeholder = $url_data[ 'placeholder' ];
 			foreach( $this->social_networks as $domain => $args ) {
-				if ( false !== strpos( $url, $domain ) ) { 
-					$html .= sprintf( '<li><a href="%1$s" target="_blank"><i class="fa fa-%2$s fa-fw"></i><span class="fa-content">&nbsp;%3$s</span></a></li>',esc_url( $url ), esc_attr( $args[ 'class' ] ), esc_html( $args[ 'name' ] ) );
+				if ( false !== strpos( $url, $domain ) ) {
+					$html .= sprintf( '<li><a href="%1$s" target="_blank" class="utility-%2$s"><i class="fa fa-%2$s fa-fw"></i><span class="fa-content">&nbsp;%3$s</span></a></li>',esc_url( $url ), esc_attr( $args[ 'class' ] ), esc_html( $placeholder ) );
 				}
 			}
 		}
@@ -62,7 +61,10 @@ function nest_get_social( $echo = true ) {
         if( $menu ) {
             $menu_items = wp_get_nav_menu_items( $menu->term_id );
             foreach( $menu_items as $index => $menu_item ) {
-                $urls[] = $menu_item->url;
+            	$urls[] = array(
+            		'url' => $menu_item->url,
+            		'placeholder' => $menu_item->title
+            	);
             }
         }
     }
