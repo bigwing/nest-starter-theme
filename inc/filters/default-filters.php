@@ -32,30 +32,6 @@ function nest_view_article($more)
 }
 
 
-add_filter( 'the_title', 'nest_the_title', 10, 2 );
-function nest_the_title( $title, $post_id = 0 ) {
-    
-    if ( is_admin() ) return $title;
-	
-    if ( in_the_loop() ) {
-        if( get_post_meta( $post_id,'custom_h1', true ) ){
-            return get_post_meta( $post_id,'custom_h1', true );
-        } else{
-          return $title;  
-        }
-    } else {
-	    $custom_h1 = get_post_meta( $post_id, 'custom_h1', true );
-	    if ( $custom_h1 ) {
-			$custom_h1 = trim( $custom_h1 );
-			if ( !empty( $custom_h1 ) ) {
-				$title = $custom_h1;
-			}
-	    }
-    }
-
-    return $title;
-}
-
 /*------------------------------------*\
     Disable comments on media pages
 \*------------------------------------*/
