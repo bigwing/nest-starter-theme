@@ -1,19 +1,27 @@
 <?php get_header(); ?>
-  <div class="content-wrapper">
-    <main id="main-content" class="sidebar" role="main">
-      <section>
-        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+			
+<div id="content">
 
-          <?php get_template_part( 'content', get_post_format() ); ?>
+	<div id="inner-content" class="row">
 
-        <?php endwhile; ?>
+		<main id="main" class="large-8 medium-8 columns" role="main">
+		
+		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		
+		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
+		    	
+		    <?php endwhile; else : ?>
+		
+		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-        <?php else: ?>
-          <?php get_template_part( 'content', 'none' ); ?>
+		    <?php endif; ?>
 
-        <?php endif; ?>
-      </section><!-- /section -->
-    </main>
-    <?php get_sidebar(); ?>
-  </div><!--main-wrapper-->
+		</main> <!-- end #main -->
+
+		<?php get_sidebar(); ?>
+
+	</div> <!-- end #inner-content -->
+
+</div> <!-- end #content -->
+
 <?php get_footer(); ?>

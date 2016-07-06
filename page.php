@@ -1,17 +1,23 @@
 <?php get_header(); ?>
-  <div class="content-wrapper">
-    <main id="main-content" role="main">
-      <section>
-        <?php
-        // Start the Loop.
-        while ( have_posts() ) : the_post();
+	
+	<div id="content">
+	
+		<div id="inner-content" class="row">
+	
+		    <main id="main" class="large-8 medium-8 columns" role="main">
+				
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          // Include the page content template.
-          get_template_part( 'content', 'page' );
+			    	<?php get_template_part( 'parts/loop', 'page' ); ?>
+			    
+			    <?php endwhile; endif; ?>							
+			    					
+			</main> <!-- end #main -->
 
-        endwhile;
-        ?>
-      </section><!--section -->
-    </main><!--main-content-->
-  </div><!--content-wrapper-->
+		    <?php get_sidebar(); ?>
+		    
+		</div> <!-- end #inner-content -->
+
+	</div> <!-- end #content -->
+
 <?php get_footer(); ?>

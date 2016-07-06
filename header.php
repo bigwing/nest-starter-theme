@@ -1,50 +1,55 @@
-<!DOCTYPE html>
-<!--[if lte IE 7]><html <?php language_attributes(); ?> class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html <?php language_attributes(); ?> class="no-js ie8"><![endif]-->
-<!--[if IE 9]><html <?php language_attributes(); ?> class="no-js ie9"><![endif]-->
-<!--[if !IE]><!--><html <?php language_attributes(); ?> class="no-js non-ie"><!--<![endif]-->
-<head>
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<?php /* Use WordPress SEO to change titles: https://wordpress.org/plugins/wordpress-seo/ */?>
-	<link href="//www.google-analytics.com" rel="dns-prefetch">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<?php
-		/* Use WordPress SEO to add meta descriptions: https://wordpress.org/plugins/wordpress-seo/
-		*/?>
-		<script>
-			var nest_ajax_url = "<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>";
-		</script>
-		<?php wp_head(); ?>
-		<?php
-		global $is_IE;
-		if ( $is_IE ) {
-			?>
-			<!--[if lt IE 9]>
-			<link rel='stylesheet' id='ie'  href='<?php echo esc_url( get_stylesheet_directory_uri() . '/css/ie.css' ); ?>' media='all' />
-			<script type='text/javascript' src='<?php echo esc_url( get_stylesheet_directory_uri() . '/js/html5.js' ); ?>'></script>
-			<script type='text/javascript' src='<?php echo esc_url( get_stylesheet_directory_uri() . '/js/respond.js' ); ?>'></script>
+<!doctype html>
+
+  <html class="no-js"  <?php language_attributes(); ?>>
+
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- Force IE to use the latest rendering engine available -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta class="foundation-mq">
+		
+		<!-- If Site Icon isn't set in customizer -->
+		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
+			<!-- Icons & Favicons -->
+			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" rel="apple-touch-icon" />
+			<!--[if IE]>
+				<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 			<![endif]-->
-			<?php
-		}
-		?>
+			<meta name="msapplication-TileColor" content="#f01d4f">
+			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
+	    	<meta name="theme-color" content="#121212">
+	    <?php } ?>
+
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+		<?php wp_head(); ?>
+
+		<!-- Drop Google Analytics here -->
+		<!-- end analytics -->
+
 	</head>
+	
+	<!-- Uncomment this line if using the Off-Canvas Menu --> 
+		
 	<body <?php body_class(); ?>>
-		<div id="body-wrap">
-		<?php do_action( 'body_open' ); ?>
-		<header class="header container-wrapper" role="banner">
-			<div id="top-utility-wrap">
-				<?php nest_get_social(); ?>
-				<?php wp_nav_menu( array(
-					'theme_location' => 'header-top-utility-nav',
-					'container' => false,
-					'menu_class' => '',
-					'menu_id' => 'header-top-utility-nav'
-					) ); ?>
-				</div><!--top-utility-wrap-->
-				<a id="logo-wrap" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
-				<div id="mobile-nav"></div>
-				<nav class="nav" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'header-nav', 'container' => false, 'menu_id' => 'menu-main' ) ); ?>
-				</nav><!--nav-->
-		</header><!--header-->
+
+		<div class="off-canvas-wrapper">
+			
+			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+				
+				<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
+				
+				<div class="off-canvas-content" data-off-canvas-content>
+					
+					<header class="header" role="banner">
+							
+						 <!-- This navs will be applied to the topbar, above all content 
+							  To see additional nav styles, visit the /parts directory -->
+						 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+		 	
+					</header> <!-- end .header -->

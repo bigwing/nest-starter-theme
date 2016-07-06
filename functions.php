@@ -1,72 +1,50 @@
 <?php
-if (!isset($content_width))
-{
-    $content_width = 900;
-}
+// Theme support options
+require_once(get_template_directory().'/assets/functions/theme-support.php'); 
 
-add_action( 'after_setup_theme', function() {
-    // Add Menu Support
-    add_theme_support('menus');
+// WP Head and other cleanup functions
+require_once(get_template_directory().'/assets/functions/cleanup.php'); 
 
-    // Add Thumbnail Theme Support
-    add_theme_support('post-thumbnails');
-    add_image_size('large', 700, '', true); // Large Thumbnail
-    add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('slider', 1000, 350, true); // Slider Image
+// Register scripts and stylesheets
+require_once(get_template_directory().'/assets/functions/enqueue-scripts.php'); 
 
- 
-    //NEW HTML5 Galleries
+// Register custom menus and menu walkers
+require_once(get_template_directory().'/assets/functions/menu.php'); 
 
-    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
-    
-    /* Since WordPress 4.1 */
-    add_theme_support( 'title-tag' );
+// Register sidebars/widget areas
+require_once(get_template_directory().'/assets/functions/sidebar.php'); 
 
-    // Enables post and comment RSS feed links to head
-    add_theme_support('automatic-feed-links');
+// Makes WordPress comments suck less
+require_once(get_template_directory().'/assets/functions/comments.php'); 
 
-    // Localisation Support
-    load_theme_textdomain('opubco', get_template_directory() . '/languages');
-} );
-require( 'inc/utilities/utility-functions.php' );
-require( 'inc/utilities/quick-edit-links.php' );
-require( 'inc/utilities/social.php' );
-require( 'inc/actions/default-actions.php' );
-require( 'inc/filters/default-filters.php' );
-require( 'inc/menus/menus.php' );
-require( 'inc/widgets/widgets.php' );
-require( 'inc/customizer/customizer.php' );
-require( 'inc/options/options.php' );
+// Replace 'older/newer' post links with numbered navigation
+require_once(get_template_directory().'/assets/functions/page-navi.php'); 
 
-function my_custom_login() {
-	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/admin.css" />';
-}
-add_action('login_head', 'my_custom_login');
+// Adds support for multiple languages
+require_once(get_template_directory().'/assets/translation/translation.php'); 
 
-add_action( 'login_enqueue_scripts', 'sourcexpress_login_enqueue_scripts', 10 );
-function sourcexpress_login_enqueue_scripts() {
-    wp_enqueue_script( 'login.js', get_template_directory_uri() . '/js/login.js', array( 'jquery' ), 1.0 );
-}
+require( 'assets/utilities/utility-functions.php' );
+require( 'assets/utilities/quick-edit-links.php' );
+require( 'assets/utilities/social.php' );
+require( 'assets/actions/default-actions.php' );
+require( 'assets/filters/default-filters.php' );
+require( 'assets/customizer/customizer.php' );
+require( 'assets/options/options.php' );
 
-function nest_custom_title( $post_id = 0, $before = '', $after = '', $echo = true ) {
-	if ( 0 == $post_id ) {
-		$post_id = get_the_ID();
-	}
-	ob_start();
-	echo $before;
-    $title = get_post_meta( $post_id, '_custom_h1', true );
-    if ( false == $title || empty( $title ) ) {
-		echo esc_html( get_the_title( $post_id ) );	    
-    } else {
-	    echo esc_html( $title ); 
-    }
-    echo $after;
-    $title = ob_get_clean();
-    if ( $echo ) {
-	    echo $title;
-    } else {
-	    return $title;
-    }
-}
+// Remove 4.2 Emoji Support
+require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
 
+// Adds site styles to the WordPress editor
+//require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
+
+// Related post function - no need to rely on plugins
+// require_once(get_template_directory().'/assets/functions/related-posts.php'); 
+
+// Use this as a template for custom post types
+// require_once(get_template_directory().'/assets/functions/custom-post-type.php');
+
+// Customize the WordPress login menu
+// require_once(get_template_directory().'/assets/functions/login.php'); 
+
+// Customize the WordPress admin
+// require_once(get_template_directory().'/assets/functions/admin.php'); 
