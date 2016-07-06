@@ -4252,3 +4252,17 @@ to display none.
   .respond-form,
   nav {
     display: none; } }
+
+/*
+	REQUIRED
+*/
+/*1280*/
+/*1024px*/
+/*780px*/
+/*640px*/
+/*320px*/
+/* short hand appearance */
+/* Background opacity */
+/* example:
+@include anchor-colors ($color__black, $color__black, $color__black, $color__black, $color__blue, $color__blue);
+*/

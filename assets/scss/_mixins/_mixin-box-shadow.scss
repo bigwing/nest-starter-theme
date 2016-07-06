@@ -1,0 +1,13 @@
+// Box shadow
+@mixin box-shadow($horizontal-length, $vertical-length, $blur, $spread, $shadow, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $horizontal-length $vertical-length $blur $spread $shadow;
+    -moz-box-shadow:inset $horizontal-length $vertical-length $blur $spread $shadow;
+    box-shadow:inset $horizontal-length $vertical-length $blur $spread $shadow;
+  } @else {
+    -webkit-box-shadow: $horizontal-length $vertical-length $blur $spread $shadow;
+    -moz-box-shadow: $horizontal-length $vertical-length $blur $spread $shadow;
+    box-shadow: $horizontal-length $vertical-length $blur $spread $shadow;
+  }
+}
+

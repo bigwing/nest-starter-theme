@@ -1,0 +1,8 @@
+// Cross browser opacity This mixin ensures cross browser opacity all the way down to Internet Explorer 5.
+@mixin opacity($opacity) {
+  filter: alpha(opacity=#{$opacity * 100});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+}
