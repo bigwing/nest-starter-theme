@@ -1,4 +1,3 @@
-jQuery(document).foundation();
 /*!
  * SlickNav Responsive Mobile Menu v1.0.7
  * (c) 2016 Josh Cope
@@ -486,52 +485,3 @@ jQuery(document).foundation();
         }
     };
 }(jQuery, document, window));
-
-/*
-These functions make sure WordPress
-and Foundation play nice together.
-*/
-
-jQuery(document).ready(function() {
-
-    // Remove empty P tags created by WP inside of Accordion and Orbit
-    jQuery('.accordion p:empty, .orbit p:empty').remove();
-
-	 // Makes sure last grid item floats left
-	jQuery('.archive-grid .columns').last().addClass( 'end' );
-
-	// Adds Flex Video to YouTube and Vimeo Embeds
-  jQuery('iframe[src*="youtube.com"], iframe[src*="vimeo.com"]').each(function() {
-    if ( jQuery(this).innerWidth() / jQuery(this).innerHeight() > 1.5 ) {
-      jQuery(this).wrap("<div class='widescreen flex-video'/>");
-    } else {
-      jQuery(this).wrap("<div class='flex-video'/>");
-    }
-  });
-
-});
-
-jQuery( document ).ready( function( $ ) {
-	/* Slick Nav*/
-	jQuery('header nav').slicknav( {
-	  allowParentLinks: false,
-	  appendTo: '#mobile-nav',
-	  removeClasses: true,
-	  openedSymbol: '&#9660',
-	   beforeClose: function( trigger ) {
-	    $trigger = jQuery( trigger );
-	    if ( ! $trigger.parent().hasClass( 'slicknav_parent' ) ) {
-	      return;
-	    }
-	    $anchor = jQuery( trigger ).find( 'a' );
-	    attr = $anchor.attr( 'href' );
-	    if ( attr == '#' ) {
-	      return;
-	    } else {
-	      window.location = attr;
-	      return false;
-	    }
-	   },
-	   nestedParentLinks: false
-	} );
-} );

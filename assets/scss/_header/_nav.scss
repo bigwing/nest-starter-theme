@@ -1,0 +1,179 @@
+.slicknav_btn {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	float: right;
+	padding: 0.438em 0.625em 0.438em 0.625em;
+	line-height: 1.125em;
+	cursor: pointer;
+	.slicknav_icon-bar + .slicknav_icon-bar {
+		margin-top: 0.188em;
+	}
+}
+.slicknav_menu {
+	*zoom: 1;
+	.slicknav_menutxt {
+		display: block;
+		line-height: 1.188em;
+		float: left;
+	}
+	.slicknav_icon {
+		float: left;
+        width: 1.125em;
+        height: 0.875em;
+		margin: 0.188em 0 0 0.438em;
+        &:before { // Firefox Mobile v42 bugfix
+            background: transparent;
+            width: 1.125em;
+            height: 0.875em;
+            display: block;
+            content: "";
+            position: absolute;
+        }
+	}
+	.slicknav_no-text {
+		margin: 0;
+	}
+	.slicknav_icon-bar {
+		display: block;
+		width: 1.125em;
+		height: 0.125em;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	}
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+.slicknav_nav {
+	clear: both;
+	ul {
+		display: block;
+	}
+	li {
+		display: block;
+	}
+	.slicknav_arrow {
+		font-size: 0.8em;
+		margin: 0 0 0 0.4em;
+	}
+	.slicknav_item {
+		cursor: pointer;
+		a {
+			display: inline;
+		}
+	}
+	.slicknav_row {
+		display: block;
+	}
+	a {
+		display: block;
+	}
+	.slicknav_parent-link a {
+		display: inline;
+	}
+}
+.slicknav_brand {
+	float: left;
+}
+//colors
+$color_0: rgba(255, 255, 255, 0.75);
+$color_btn: #222;
+$color_text: #fff;
+$color_shadow: #000;
+$color_bg: #4c4c4c;
+$color_hover_bg: #ccc;
+$color_hover_text: #222;
+
+.slicknav_menu {
+	font-size: 16px;
+	box-sizing: border-box;
+	background: $color_bg;
+	padding: 5px;
+	* {
+		box-sizing: border-box;
+	}
+	.slicknav_menutxt {
+		color: $color_text;
+		font-weight: bold;
+		text-shadow: 0 1px 3px $color_shadow;
+	}
+	.slicknav_icon-bar {
+		background-color: $color_text;
+	}
+}
+.slicknav_btn {
+	margin: 5px 5px 6px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px $color_0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: $color_btn;
+}
+.slicknav_nav {
+	color: $color_text;
+	margin: 0;
+	padding: 0;
+	font-size: 0.875em;
+	list-style: none;
+	overflow: hidden;
+	ul {
+		list-style: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0 0 0 20px;
+	}
+	.slicknav_row {
+		padding: 5px 10px;
+		margin: 2px 5px;
+		&:hover {
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			background: $color_hover_bg;
+			color: $color_text;
+		}
+	}
+	a {
+		padding: 5px 10px;
+		margin: 2px 5px;
+		text-decoration: none;
+		color: $color_text;
+		&:hover {
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			background: $color_hover_bg;
+			color: $color_hover_text;
+		}
+	}
+	.slicknav_txtnode {
+		margin-left: 15px;
+	}
+	.slicknav_item a {
+		padding: 0;
+		margin: 0;
+	}
+	.slicknav_parent-link a {
+		padding: 0;
+		margin: 0;
+	}
+}
+.slicknav_brand {
+	color: $color_text;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 7px 12px;
+	height: 44px;
+}

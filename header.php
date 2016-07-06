@@ -26,7 +26,9 @@
 	    <?php } ?>
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+		<script>
+			var nest_ajax_url = "<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>";
+		</script>
 		<?php wp_head(); ?>
 
 		<!-- Drop Google Analytics here -->
@@ -38,6 +40,7 @@
 		
 	<body <?php body_class(); ?>>
 		<?php do_action( 'body_open' ); ?>
+		<div id="mobile-nav"></div><?php /* Remove if not using SlickNav */ ?>
 		<div class="off-canvas-wrapper">
 			
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
@@ -47,9 +50,15 @@
 				<div class="off-canvas-content" data-off-canvas-content>
 					
 					<header class="header" role="banner">
+						<div class="row">
+							<div id="logo" class="large-12 large-centered columns">
+								<a id="logo-wrap" href="<?php echo esc_url( home_url() ); ?>"><?php echo nest_get_logo_srcset(); ?></a>
+							</div><!-- #logo -->
+						</div>
 							
-						 <!-- This navs will be applied to the topbar, above all content 
-							  To see additional nav styles, visit the /parts directory -->
-						 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+						 <?php
+							/* Use offcanvas-topbar for slideout menu */ 
+						 ?>
+						 <?php get_template_part( 'parts/nav', 'title-bar' ); ?>
 		 	
 					</header> <!-- end .header -->

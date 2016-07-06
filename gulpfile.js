@@ -23,7 +23,10 @@ gulp.task('styles', function() {
             this.emit('end');
         }))
         .pipe(sourcemaps.init()) // Start Sourcemaps
-        .pipe(sass())
+        .pipe(sass({ 
+	      style: 'expanded',
+	      sourceComments: 'normal'
+	    }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
