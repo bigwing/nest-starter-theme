@@ -37,7 +37,7 @@
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
 	<body <?php body_class(); ?>>
-
+		<?php do_action( 'body_open' ); ?>
 		<div class="off-canvas-wrapper">
 			
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
