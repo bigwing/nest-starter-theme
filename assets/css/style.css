@@ -5298,19 +5298,20 @@ to display none.
 
 /* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_menu {
+  display: none;
   *zoom: 1; }
-  /* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_menutxt {
     display: block;
     line-height: 1.188em;
     float: left; }
-  /* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_icon {
     float: left;
     width: 1.125em;
     height: 0.875em;
     margin: 0.188em 0 0 0.438em; }
-    /* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+    /* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
     .slicknav_menu .slicknav_icon:before {
       background: transparent;
       width: 1.125em;
@@ -5318,78 +5319,78 @@ to display none.
       display: block;
       content: "";
       position: absolute; }
-  /* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_no-text {
     margin: 0; }
-  /* line 37, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 38, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_icon-bar {
     display: block;
     width: 1.125em;
     height: 0.125em;
     border-radius: 1px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
-  /* line 48, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 49, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu:before {
     content: " ";
     display: table; }
-  /* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 53, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu:after {
     content: " ";
     display: table;
     clear: both; }
 
-/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 59, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_nav {
   clear: both; }
-  /* line 60, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 61, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav ul {
     display: block; }
-  /* line 63, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 64, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav li {
     display: block; }
-  /* line 66, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 67, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
     margin: 0 0 0 0.4em; }
-  /* line 70, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 71, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
-    /* line 72, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+    /* line 73, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
     .slicknav_nav .slicknav_item a {
       display: inline; }
-  /* line 76, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 77, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_row {
     display: block; }
-  /* line 79, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 80, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav a {
     display: block; }
-  /* line 82, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 83, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_parent-link a {
     display: inline; }
 
-/* line 86, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 87, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_brand {
   float: left; }
 
-/* line 98, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 99, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_menu {
   font-size: 16px;
   box-sizing: border-box;
   background: #4c4c4c;
   padding: 5px; }
-  /* line 103, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 104, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu * {
     box-sizing: border-box; }
-  /* line 106, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 107, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_menutxt {
     color: #fff;
     font-weight: bold;
     text-shadow: 0 1px 3px #000; }
-  /* line 111, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 112, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_menu .slicknav_icon-bar {
     background-color: #fff; }
 
-/* line 115, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 116, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_btn {
   margin: 5px 5px 6px;
   text-decoration: none;
@@ -5397,7 +5398,7 @@ to display none.
   border-radius: 4px;
   background-color: #222; }
 
-/* line 124, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 125, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_nav {
   color: #fff;
   margin: 0;
@@ -5405,48 +5406,59 @@ to display none.
   font-size: 0.875em;
   list-style: none;
   overflow: hidden; }
-  /* line 131, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 132, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav ul {
     list-style: none;
     overflow: hidden;
     padding: 0;
     margin: 0 0 0 20px; }
-  /* line 137, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 138, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_row {
     padding: 5px 10px;
     margin: 2px 5px; }
-    /* line 140, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+    /* line 141, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
     .slicknav_nav .slicknav_row:hover {
       border-radius: 6px;
       background: #ccc;
       color: #fff; }
-  /* line 148, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 149, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav a {
     padding: 5px 10px;
     margin: 2px 5px;
     text-decoration: none;
     color: #fff; }
-    /* line 153, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+    /* line 154, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
     .slicknav_nav a:hover {
       border-radius: 6px;
       background: #ccc;
       color: #222; }
-  /* line 161, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 162, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_txtnode {
     margin-left: 15px; }
-  /* line 164, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 165, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_item a {
     padding: 0;
     margin: 0; }
-  /* line 168, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  /* line 169, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
   .slicknav_nav .slicknav_parent-link a {
     padding: 0;
     margin: 0; }
 
-/* line 173, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+/* line 174, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
 .slicknav_brand {
   color: #fff;
   font-size: 18px;
   line-height: 30px;
   padding: 7px 12px;
   height: 44px; }
+
+@media screen and (max-width: 48.75em) {
+  /* line 182, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  .slicknav_menu {
+    display: block; }
+  /* line 185, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  .slick-nav-on {
+    display: none; }
+  /* line 188, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_header/_nav.scss */
+  #mobile-nav {
+    background: #211f20; } }

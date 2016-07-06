@@ -11,6 +11,7 @@
 	}
 }
 .slicknav_menu {
+	display: none;
 	*zoom: 1;
 	.slicknav_menutxt {
 		display: block;
@@ -176,4 +177,15 @@ $color_hover_text: #222;
 	line-height: 30px;
 	padding: 7px 12px;
 	height: 44px;
+}
+@include break-point-mobile {
+	.slicknav_menu {
+		display: block;
+	}
+	.slick-nav-on {
+		display: none;
+	}
+	#mobile-nav {
+		background: #211f20;
+	}
 }
