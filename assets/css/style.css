@@ -6201,3 +6201,50 @@ ul#social-wrap {
 /* line 104, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_social.scss */
 #social-wrap .fa-wordpress {
   background-color: #0074a2; }
+
+/* line 1, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em; }
+
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+
+/* line 12, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%; }
+
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%; }
+
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%; }
+
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%; }
+
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%; }
+
+/* line 32, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%; }
+
+/* line 36, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%; }
+
+/* line 40, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%; }
+
+/* line 44, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
+.gallery-caption {
+  display: block; }
