@@ -6,7 +6,6 @@
     </header> <!-- end article header -->
 					
     <section class="entry-content" itemprop="articleBody">
-		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
 						
@@ -15,6 +14,6 @@
 		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>	
 	</footer> <!-- end article footer -->
 						
-	<?php comments_template(); ?>	
+	<?php //comments_template(); ?>	
 													
 </article> <!-- end article -->
