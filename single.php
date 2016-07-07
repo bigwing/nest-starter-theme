@@ -5,7 +5,7 @@
 	<div id="inner-content" class="row">
 
 		<main id="main" class="large-8 medium-8 columns" role="main">
-		
+			<?php get_template_part( 'parts/content', 'breadcrumbs' ); ?>
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 		    	<?php get_template_part( 'parts/loop', 'single' ); ?>

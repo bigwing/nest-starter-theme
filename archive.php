@@ -5,7 +5,7 @@
 		<div id="inner-content" class="row">
 		
 		    <main id="main" class="large-8 medium-8 columns" role="main">
-			    
+			    <?php get_template_part( 'parts/content', 'breadcrumbs' ); ?>
 		    	<header>
 		    		<h1 class="page-title"><?php the_archive_title();?></h1>
 					<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>

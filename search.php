@@ -5,6 +5,7 @@
 		<div id="inner-content" class="row">
 	
 			<main id="main" class="large-8 medium-8 columns first" role="main">
+				<?php get_template_part( 'parts/content', 'breadcrumbs' ); ?>
 				<header>
 					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
 				</header>

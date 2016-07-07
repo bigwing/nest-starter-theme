@@ -5,7 +5,7 @@
 		<div id="inner-content" class="row">
 	
 			<main id="main" class="large-8 medium-8 columns" role="main">
-
+				<?php get_template_part( 'parts/content', 'breadcrumbs' ); ?>
 				<article id="content-not-found">
 				
 					<header class="article-header">
