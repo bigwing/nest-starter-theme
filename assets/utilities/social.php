@@ -1,5 +1,5 @@
 <?php
-class nest_Social {
+class Nest_Social {
 	private $social_networks = array();
 	public function __construct() {
 	}
@@ -28,18 +28,20 @@ class nest_Social {
 		'weibo.com'          => array( 'name' => 'Weibo',          'class' => 'weibo',         'icon' => 'fa-weibo',         'icon-sign' => 'fa-weibo'            ),
 		'xing.com'           => array( 'name' => 'Xing',           'class' => 'xing',          'icon' => 'fa-xing',          'icon-sign' => 'fa-xing'             ),
 		'youtu.be'           => array( 'name' => 'YouTube',        'class' => 'youtube',       'icon' => 'fa-youtube',       'icon-sign' => 'fa-youtube-sign'     ),
-		'youtube.com'        => array( 'name' => 'YouTube',        'class' => 'youtube',       'icon' => 'fa-youtube',       'icon-sign' => 'fa-youtube-sign'     ) );
+		'youtube.com'        => array( 'name' => 'YouTube',        'class' => 'youtube',       'icon' => 'fa-youtube',       'icon-sign' => 'fa-youtube-sign'     ),
+		'wordpress.org'        => array( 'name' => 'WordPress',        'class' => 'wordpress',       'icon' => 'fa-wordpress',       'icon-sign' => 'fa-wordpress'     ),
+		'wordpress.com'        => array( 'name' => 'WordPress',        'class' => 'wordpress',       'icon' => 'fa-wordpress',       'icon-sign' => 'fa-wordpress'     ) );
 	}
 	//Takes an array of url strings
 	//Return HTML list items
-	public function get_icons( $urls = array() ) {
+	public function get_icons( $urls = array(), $display ) {
 		if ( empty( $this->social_networks ) ) {
 			$this->init();
 		}
 		if ( empty( $urls ) || !is_array( $urls ) ) {
 			return '';
 		}
-		$html = '<ul id="social-wrap">';
+		$html = sprintf( '<ul id="social-wrap" class="icon-%s">', esc_attr( $display ) );
 		foreach( $urls as $index => $url_data ) {
 			$url = $url_data[ 'url' ];
 			$placeholder = $url_data[ 'placeholder' ];
@@ -53,7 +55,7 @@ class nest_Social {
 		return $html;
 	}
 }
-function nest_get_social( $echo = true ) {
+function nest_get_social( $echo = true, $display = 'flat' ) {
     $locations = get_nav_menu_locations();
     $urls = array();
     if ( isset( $locations[ 'social-nav' ] ) ) {
@@ -70,8 +72,8 @@ function nest_get_social( $echo = true ) {
     }
     $social_html = '';
     if ( !empty( $urls ) ) {
-        $social = new nest_Social();
-        $social_html = $social->get_icons( $urls );
+        $social = new Nest_Social();
+        $social_html = $social->get_icons( $urls, $display );
     }
     if ( $echo ) {
         echo $social_html;
