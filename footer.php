@@ -12,7 +12,7 @@
 							        	$email = get_option( 'nest_email' );
 							        	?>
 							        	
-									<span itemprop="name"><?php nest_copyright( '2016', $echo = true ); ?> <?php echo esc_html( get_bloginfo('name') ); ?></span><br />
+									<span class="copyright"><?php nest_copyright( '2016', $echo = true ); ?> </span><span itemprop="name"><?php echo esc_html( get_bloginfo('name') ); ?></span><br />
 							        <?php if( $address ){
 							          echo '<span itemprop="streetAddress">' . esc_html( $address ) . '</span><br />';
 							        } ?>
