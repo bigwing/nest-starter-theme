@@ -1,0 +1,28 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Foundation Font Awesome Buttons (ffab)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'ffab-variables';
+@import 'ffab-functions';
+
+@import 'ffab-base';
+@import 'ffab-bordered';
+@import 'ffab-hollow';
+@import 'ffab-icon';
+@import 'ffab-overlay';
+@import 'ffab-position';
+@import 'ffab-transitions';
+@import 'ffab-utilities';
+
+@mixin ffab-everything {
+  @include ffab-base;
+  @include ffab-icon;
+  @include ffab-positions;
+  @include ffab-overlay-default;
+  @include ffab-transitions;
+
+  @include ffab-utilities;
+
+  @include ffab-bordered;
+  @include ffab-hollow;
+}

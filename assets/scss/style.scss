@@ -75,6 +75,11 @@ CSS file.
 // Import Mixins
 @import "_mixins/mixins-master";
 
+// Import Font Awesome - http://joshmedeski.github.io/foundation-font-awesome-buttons/
+@import "fontawesome/font-awesome";
+@import "foundation-font-awesome-buttons/ffab";
+@include ffab-everything;
+
 // Import Theme Assets
 @import "_header/header";
 @import "_header/nav";

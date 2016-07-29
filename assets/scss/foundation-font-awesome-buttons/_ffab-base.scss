@@ -1,0 +1,11 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Base (ffab)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin ffab-base {
+  .#{$ffab-css-prefix} {
+    overflow: hidden;
+    position: relative;
+    transition: all $ffab-transition-speed;
+  }
+}

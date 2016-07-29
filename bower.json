@@ -1,8 +1,11 @@
 {
   "name": "JointsWP",
   "private": true,
-  "ignore":  [],
+  "ignore": [],
   "dependencies": {
     "foundation-sites": ">=6.1"
+  },
+  "devDependencies": {
+    "foundation-font-awesome-buttons": "^3.2.3"
   }
 }
