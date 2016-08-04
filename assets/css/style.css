@@ -9406,3 +9406,6 @@ ul#social-wrap {
     /* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
     .testimonial-content .testimonial-meta .testimonial-location {
       text-transform: uppercase; }
+  /* line 29, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+  .testimonial-content .testimonial-readmore {
+    margin: 1em 0 2em 0; }

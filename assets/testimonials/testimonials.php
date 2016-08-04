@@ -221,6 +221,10 @@ function nest_testimonial( $args = array() ) {
 			}
 			echo '</nav>';	
 		}
+		if ( 'true' == $args[ 'archive' ] ) {
+			printf( '<a href="%s" class="button ffab fa-arrow-right">View All Testimonials</a>', esc_url( home_url( '/testimonials' ) ) );
+		}
+		
 		echo '</div>';
 	}
 	
