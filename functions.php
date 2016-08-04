@@ -30,6 +30,7 @@ require( 'assets/actions/default-actions.php' );
 require( 'assets/filters/default-filters.php' );
 require( 'assets/customizer/customizer.php' );
 require( 'assets/options/options.php' );
+require( 'assets/testimonials/testimonials.php' );
 
 // Remove 4.2 Emoji Support
 require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
