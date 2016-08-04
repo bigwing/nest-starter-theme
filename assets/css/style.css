@@ -9366,3 +9366,43 @@ ul#social-wrap {
 /* line 44, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_wp_galleries.scss */
 .gallery-caption {
   display: block; }
+
+/* line 1, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+.testimonials {
+  /* Left and Right Arrows */ }
+  /* line 3, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+  .testimonials .orbit-previous,
+  .testimonials .orbit-next {
+    color: #000; }
+    /* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+    .testimonials .orbit-previous:hover,
+    .testimonials .orbit-next:hover {
+      color: #FFF; }
+
+/* line 11, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+.testimonial-content {
+  padding: 0 2.5em; }
+  /* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+  .testimonial-content .testimonial-meta {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -moz-align-items: center;
+    align-items: center; }
+    /* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+    .testimonial-content .testimonial-meta img {
+      max-width: 80px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border: 2px solid #000; }
+    /* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+    .testimonial-content .testimonial-meta .testimonial-name {
+      margin-left: 2em;
+      text-transform: uppercase; }
+    /* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/nest-starter-theme/assets/scss/_testimonials.scss */
+    .testimonial-content .testimonial-meta .testimonial-location {
+      text-transform: uppercase; }

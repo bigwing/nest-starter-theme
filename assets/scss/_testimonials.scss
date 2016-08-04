@@ -1,0 +1,31 @@
+.testimonials {
+	/* Left and Right Arrows */
+	.orbit-previous, 
+	.orbit-next {
+		color: #000;
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
+.testimonial-content {
+	padding: 0 2.5em;
+	.testimonial-meta {
+		@include flexbox;
+		@include align-items(center);
+		img {
+			max-width: 80px;
+			@include border-radius( 50% );
+			border: 2px solid #000;
+		}
+		.testimonial-name {
+			margin-left: 2em;
+			text-transform: uppercase;
+		}
+		.testimonial-location {
+			text-transform: uppercase;
+		}
+	}
+	
+		
+}

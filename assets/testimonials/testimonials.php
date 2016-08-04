@@ -1,5 +1,5 @@
 <?php
-// Register Post Type and Taxonomy
+// Register Post Type and Taxonomy and Shortcode
 add_action( 'init', 'nest_testimonials_register' );
 function nest_testimonials_register() {
 	$labels = array(
@@ -86,6 +86,9 @@ function nest_testimonials_register() {
 		'show_tagcloud'              => false,
 	);
 	register_taxonomy( 'testimonial_category', array( 'testimonials' ), $args );
+
+	//Shortcode
+	add_shortcode( 'testimonial', 'nest_testimonial' );
 }
 
 // Change default title placeholder
@@ -148,4 +151,81 @@ function nest_get_testimonial( $post_id = 0 ) {
 		$return[ 'website' ] = $website;
 	}
 	return $return; 
+}
+
+// Shortcode Output
+// Example shortcode: [testimonial cat='all' id='0' limit='5' archive='true' bullets='true']
+function nest_testimonial( $args = array() ) {
+	$args = shortcode_atts( array(
+		'cat'     => 'all',
+		'id'      => 0,
+		'limit'   => 5,
+		'archive' => 'false',
+		'bullets' => 'true'
+	), $args, 'testimonials' );
+	
+	ob_start();
+	global $wp_query;
+	$temp = $wp_query;
+	$query_args = array(
+		'post_type'      => 'testimonials',
+		'orderby'        => 'menu_order',
+		'order'          => 'ASC',
+		'posts_per_page' => $args[ 'limit' ]	
+	);
+	if ( 'all' !== $args[ 'cat' ] ) {
+		$query_args[ 'tax_query' ] = array(
+			array(
+				'taxonomy' => 'testimonial_category',
+				'field'    => 'slug',
+				'terms'    => $args[ 'cat' ]
+			)
+		);
+	}
+	if( 0 !== $args[ 'id' ] ) {
+		$query_args[ 'p' ] = $args[ 'id' ];
+	}
+	$wp_query = new WP_Query( $query_args );
+	if ( have_posts() ) {
+		$bullet_titles = array();
+		$testimonial_count = 0;
+		echo '<div class="orbit testimonials testimonials-shortcode" role="region" aria-label="Testimonials" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">';
+		echo '<ul class="orbit-container testimonial-content">';
+		echo '<button class="orbit-previous"><span class="show-for-sr">Previous Testimonial</span>&#9664;&#xFE0E;</button>';
+		echo '<button class="orbit-next"><span class="show-for-sr">Next Testimonial</span>&#9654;&#xFE0E;</button>';
+		while( have_posts() ) {
+			the_post();
+			$bullet_titles[] = get_the_title();
+			$class = "orbit-slide";
+			if ( 0 == $testimonial_count ) {
+				$class = 'is-active orbit-slide';
+			}
+			echo sprintf( '<li class="%s">', esc_attr( $class ) );
+			get_template_part( 'parts/testimonial', 'shortcode' );
+			echo '</li>';
+			$testimonial_count += 1;
+		}
+		echo '</ul>';
+		
+		$bullet_count = 0;
+		if ( 0 < count( $bullet_titles ) && 'true' == $args[ 'bullets' ] ) {
+			echo '<nav class="orbit-bullets">';
+			foreach( $bullet_titles as $bullet_title ) {
+				if ( 0 == $bullet_count ) {
+					echo sprintf( '<button class="is-active" data-slide="0"><span class="show-for-sr">%s.</span><span class="show-for-sr">Current Slide</span></button>', esc_html( $bullet_title ) );
+				} else {
+					echo sprintf( '<button data-slide="%d"><span class="show-for-sr">%s</span></button>', esc_attr( $bullet_count ), esc_html( $bullet_title ) );
+				}
+				
+				$bullet_count += 1;
+			}
+			echo '</nav>';	
+		}
+		echo '</div>';
+	}
+	
+	$wp_query = $temp;
+	wp_reset_query();
+	return ob_get_clean();
+	wp_print_r( $args );
 }
