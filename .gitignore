@@ -1,6 +1,6 @@
 *.log
 *.map
 *.DS_Store
-.sass-cache/*
-bower_componenets/*
-node_modules/*
+.sass-cache
+node_modules
+bower_components
