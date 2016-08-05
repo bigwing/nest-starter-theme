@@ -14,11 +14,11 @@ CSS file.
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
 
-// Import foundation.scss from vendor files
-@import "../../vendor/foundation-sites/scss/foundation";
+// Import foundation.scss from bower_components files
+@import "../../bower_components/foundation-sites/scss/foundation";
 
-// Import Motion-UI from vendor files
-@import "../../vendor/motion-ui/src/motion-ui";
+// Import Motion-UI from bower_components files
+@import "../../bower_components/motion-ui/src/motion-ui";
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
@@ -76,8 +76,8 @@ CSS file.
 @import "_mixins/mixins-master";
 
 // Import Font Awesome - http://joshmedeski.github.io/foundation-font-awesome-buttons/
-@import "fontawesome/font-awesome";
-@import "foundation-font-awesome-buttons/ffab";
+@import "../../bower_components/fontawesome/scss/font-awesome";
+@import "../../bower_components/foundation-font-awesome-buttons/src/ffab";
 @include ffab-everything;
 
 // Import Theme Assets

@@ -63,30 +63,30 @@ gulp.task('foundation-js', function() {
   return gulp.src([	
   		  
   		  // Foundation core - needed if you want to use any of the components below
-          './vendor/foundation-sites/js/foundation.core.js',
-          './vendor/foundation-sites/js/foundation.util.*.js',
+          './bower_components/foundation-sites/js/foundation.core.js',
+          './bower_components/foundation-sites/js/foundation.util.*.js',
           
           // Pick the components you need in your project
-          './vendor/foundation-sites/js/foundation.abide.js',
-          './vendor/foundation-sites/js/foundation.accordion.js',
-          './vendor/foundation-sites/js/foundation.accordionMenu.js',
-          './vendor/foundation-sites/js/foundation.drilldown.js',
-          './vendor/foundation-sites/js/foundation.dropdown.js',
-          './vendor/foundation-sites/js/foundation.dropdownMenu.js',
-          './vendor/foundation-sites/js/foundation.equalizer.js',
-          './vendor/foundation-sites/js/foundation.interchange.js',
-          './vendor/foundation-sites/js/foundation.magellan.js',
-          './vendor/foundation-sites/js/foundation.offcanvas.js',
-          './vendor/foundation-sites/js/foundation.orbit.js',
-          './vendor/foundation-sites/js/foundation.responsiveMenu.js',
-          './vendor/foundation-sites/js/foundation.responsiveToggle.js',
-          './vendor/foundation-sites/js/foundation.reveal.js',
-          './vendor/foundation-sites/js/foundation.slider.js',
-          './vendor/foundation-sites/js/foundation.sticky.js',
-          './vendor/foundation-sites/js/foundation.tabs.js',
-          './vendor/foundation-sites/js/foundation.toggler.js',
-          './vendor/foundation-sites/js/foundation.tooltip.js',
-          './vendor/foundation-sites/js/foundation.util.motion.js'
+          './bower_components/foundation-sites/js/foundation.abide.js',
+          './bower_components/foundation-sites/js/foundation.accordion.js',
+          './bower_components/foundation-sites/js/foundation.accordionMenu.js',
+          './bower_components/foundation-sites/js/foundation.drilldown.js',
+          './bower_components/foundation-sites/js/foundation.dropdown.js',
+          './bower_components/foundation-sites/js/foundation.dropdownMenu.js',
+          './bower_components/foundation-sites/js/foundation.equalizer.js',
+          './bower_components/foundation-sites/js/foundation.interchange.js',
+          './bower_components/foundation-sites/js/foundation.magellan.js',
+          './bower_components/foundation-sites/js/foundation.offcanvas.js',
+          './bower_components/foundation-sites/js/foundation.orbit.js',
+          './bower_components/foundation-sites/js/foundation.responsiveMenu.js',
+          './bower_components/foundation-sites/js/foundation.responsiveToggle.js',
+          './bower_components/foundation-sites/js/foundation.reveal.js',
+          './bower_components/foundation-sites/js/foundation.slider.js',
+          './bower_components/foundation-sites/js/foundation.sticky.js',
+          './bower_components/foundation-sites/js/foundation.tabs.js',
+          './bower_components/foundation-sites/js/foundation.toggler.js',
+          './bower_components/foundation-sites/js/foundation.tooltip.js',
+          './bower_components/foundation-sites/js/foundation.util.motion.js'
   ])
 	.pipe(babel({
 		presets: ['es2015'],
@@ -101,10 +101,10 @@ gulp.task('foundation-js', function() {
     .pipe(gulp.dest('./assets/js'))
 }); 
 
-// Update Foundation with Bower and save to /vendor
+// Update Foundation with Bower and save to /bower_components
 gulp.task('bower', function() {
   return bower({ cmd: 'update'})
-    .pipe(gulp.dest('vendor/'))
+    .pipe(gulp.dest('bower_components/'))
 });  
 
 // Browser-Sync watch files and inject changes
@@ -137,7 +137,7 @@ gulp.task('watch', function() {
   gulp.watch('./assets/js/scripts/*.js', ['site-js']);
   
   // Watch foundation-js files
-  gulp.watch('./vendor/foundation-sites/js/*.js', ['foundation-js']);
+  gulp.watch('./bower_components/foundation-sites/js/*.js', ['foundation-js']);
 
 }); 
 
