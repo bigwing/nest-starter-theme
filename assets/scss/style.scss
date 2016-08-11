@@ -10,6 +10,7 @@ CSS file.
 
 // Import custom mixins
 @import "mixins";
+@import "_mixins/mixins-master";
 
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
@@ -71,9 +72,6 @@ CSS file.
 
 // Import your print styles
 @import "print";
-
-// Import Mixins
-@import "_mixins/mixins-master";
 
 // Import Font Awesome - http://joshmedeski.github.io/foundation-font-awesome-buttons/
 @import "../../bower_components/fontawesome/scss/font-awesome";

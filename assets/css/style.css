@@ -51,6 +51,20 @@ span.amp {
 CSS3 GRADIENTS.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*
+	REQUIRED
+*/
+/*1280*/
+/*1024px*/
+/*780px*/
+/*640px*/
+/*320px*/
+/* short hand appearance */
+/* Background opacity */
+/* example:
+@include anchor-colors ($color__black, $color__black, $color__black, $color__black, $color__blue, $color__blue);
+*/
+/* short hand placeholder style */
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.3
@@ -5415,19 +5429,6 @@ to display none.
   nav {
     display: none; } }
 
-/*
-	REQUIRED
-*/
-/*1280*/
-/*1024px*/
-/*780px*/
-/*640px*/
-/*320px*/
-/* short hand appearance */
-/* Background opacity */
-/* example:
-@include anchor-colors ($color__black, $color__black, $color__black, $color__black, $color__blue, $color__blue);
-*/
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
