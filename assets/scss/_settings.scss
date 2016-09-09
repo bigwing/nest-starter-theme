@@ -51,10 +51,10 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #2199e8,
   secondary: #777,
-  success: #3adb76,
+  success: #5fdb3a,
   warning: #ffae00,
   alert: #ec5840,
-  error: #790000
+  error: #b40000
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -442,7 +442,7 @@ $pagination-arrows: true;
 // 27. Progress Bar
 // ----------------
 
-$progress-height: 1rem;
+$progress-height: 24px;
 $progress-background: $medium-gray;
 $progress-margin-bottom: $global-margin;
 $progress-meter-background: $primary-color;
