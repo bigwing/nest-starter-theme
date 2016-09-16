@@ -101,6 +101,26 @@ gulp.task('foundation-js', function() {
     .pipe(gulp.dest('./assets/js'))
 }); 
 
+// JSHint, concat, and minify Foundation JavaScript
+gulp.task('what-input-js', function() {
+  return gulp.src([	
+  		  
+  		  // Foundation core - needed if you want to use any of the components below
+          './bower_components/what-input/what-input.js'
+  ])
+	.pipe(babel({
+		presets: ['es2015'],
+	    compact: true
+	}))
+    .pipe(sourcemaps.init())
+    .pipe(concat('what-input.js'))
+    .pipe(gulp.dest('./assets/js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('.')) // Creates sourcemap for minified Foundation JS
+    .pipe(gulp.dest('./assets/js'))
+});
+
 // Update Foundation with Bower and save to /bower_components
 gulp.task('bower', function() {
   return bower({ cmd: 'update'})
@@ -143,5 +163,5 @@ gulp.task('watch', function() {
 
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
-  gulp.start('styles', 'site-js', 'foundation-js');
+  gulp.start('styles', 'site-js', 'foundation-js', 'what-input-js' );
 });
