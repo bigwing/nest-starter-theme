@@ -144,7 +144,7 @@ function nest_custom_title( $post_id = 0, $before = '', $after = '', $echo = tru
 	}
 	ob_start();
 	echo $before;
-    $title = get_field( 'custom_h1' );
+    $title = function_exists( 'get_field' ) ? get_field( 'custom_h1' ) : false;
     if ( false == $title || empty( $title ) ) {
 		echo esc_html( get_the_title( $post_id ) );	    
     } else {
