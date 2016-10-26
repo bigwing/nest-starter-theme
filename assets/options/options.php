@@ -209,11 +209,32 @@ function nest_archives_seo_init() {
 add_filter( 'get_the_archive_title', 'nest_archive_seo_title' );
 function nest_archive_seo_title( $title ) {
 	$post_type = get_post_type();
+	if ( ! $post_type && is_home() ) {
+		$post_type = 'post';
+	}
 	if ( $post_type && function_exists( 'get_field' ) ) {
 		$maybe_post_title = get_field( 'archive_title', $post_type );
 		if ( $maybe_post_title ) {
 			return $maybe_post_title;
 		}
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_description', 'nest_archive_seo_description' );
+function nest_archive_seo_description( $description ) {
+	$post_type = get_post_type();
+	if ( ! $post_type && is_home() ) {
+		$post_type = 'post';
+	}
+	if ( $post_type && function_exists( 'get_field' ) ) {
+		$maybe_post_description = get_field( 'archive_content', $post_type );
+		if ( $maybe_post_description ) {
+			return apply_filters( 'nest_the_content', $maybe_post_description );
+		}
+	}
+	return $description;
+}
 	}
 	return $title;
 }
