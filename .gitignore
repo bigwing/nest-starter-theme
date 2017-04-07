@@ -1,6 +1,16 @@
 *.log
 *.map
 *.DS_Store
-.sass-cache
-node_modules
-bower_components
+.sass-cache/
+node_modules/
+bower_components/
+
+# assets created by gulp tasks
+assets/**/*.min.*
+assets/css/
+assets/js/*
+!assets/js/scripts
+
+/docs/
+
+/vendor/
