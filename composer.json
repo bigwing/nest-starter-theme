@@ -1,0 +1,34 @@
+{
+  "name": "bigwing/nest-starter-theme",
+  "description": "WordPress starter theme built on Foundation 6.",
+  "type": "wordpress-theme",
+  "license": "GPL2+",
+  "authors": [
+    {
+      "name": "BigWing Interactive",
+      "email": "wordpress@bigwing.com",
+      "homepage": "https://bigwing.com"
+    },
+    {
+      "name": "Jeremy Englert",
+      "homepage": "https://github.com/JeremyEnglert/JointsWP"
+    }
+  ],
+  "minimum-stability": "RC",
+  "prefer-stable": true,
+  "require": {},
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8",
+    "frenck/php-compatibility": "^7.1",
+    "wp-coding-standards/wpcs": "^0.11"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@add-phpcs-sniffs"
+    ],
+    "post-update-cmd": [
+      "@add-phpcs-sniffs"
+    ],
+    "add-phpcs-sniffs": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs,vendor/frenck/php-compatibility"
+  }
+}
