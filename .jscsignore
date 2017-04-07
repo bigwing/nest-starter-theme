@@ -1,0 +1,8 @@
+# Compiled assets
+assets/js/
+!/assets/js/scripts/
+
+# Libraries
+assets/js/scripts/jquery.slicknav.js
+
+!gulpfile.js

@@ -1,0 +1,13 @@
+{
+  "color": true,
+  "save": true,
+  "strict-ssl": true,
+  "scripts": {
+	"preinstall": "",
+	"postinstall": "bower prune",
+	"preuninstall": ""
+  },
+  "ignoredDependencies": [
+	"jquery"
+  ]
+}
