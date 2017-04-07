@@ -25,7 +25,7 @@
 	    	<meta name="theme-color" content="#121212">
 	    <?php } ?>
 
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<script>
 			var nest_ajax_url = "<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>";
 		</script>
@@ -56,9 +56,9 @@
 							</div><!-- #logo -->
 						</div>
 							
-						 <?php
-							/* Use offcanvas-topbar for slideout menu */ 
-						 ?>
-						 <?php get_template_part( 'parts/nav', 'title-bar' ); ?>
+							<?php
+							/* Use offcanvas-topbar for slideout menu */
+							?>
+							<?php get_template_part( 'parts/nav', 'title-bar' ); ?>
 		 	
 					</header> <!-- end .header -->

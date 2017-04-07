@@ -1,2 +1,2 @@
 <p class="byline">
-	Published on <?php the_time('F j, Y') ?></p>	
+	Published on <?php the_time( 'F j, Y' ) ?></p>	

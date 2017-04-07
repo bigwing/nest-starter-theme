@@ -1,22 +1,22 @@
 <?php
 // Custom H1
-if( function_exists('acf_add_local_field_group') ):
-$nest_post_types = array_keys( get_post_types( '', 'names' ) );
-$nest_acf_post_types = array();
-foreach( $nest_post_types as $post_type ) {
-	$nest_acf_post_types[] = array(
+if ( function_exists( 'acf_add_local_field_group' ) ) :
+	$nest_post_types = array_keys( get_post_types( '', 'names' ) );
+	$nest_acf_post_types = array();
+	foreach ( $nest_post_types as $post_type ) {
+		$nest_acf_post_types[] = array(
 		array(
 			'param' => 'post_type',
 			'operator' => '==',
-			'value' => $post_type	
-		)
-	);
-}
-acf_add_local_field_group(array (
-	'key' => 'group_57dc101c1f0f7',
-	'title' => 'Headline',
-	'fields' => array (
-		array (
+			'value' => $post_type,
+		),
+			);
+	}
+	acf_add_local_field_group(array(
+		'key' => 'group_57dc101c1f0f7',
+		'title' => 'Headline',
+		'fields' => array(
+		array(
 			'key' => 'field_57dc219736cbf',
 			'label' => 'Custom Headline',
 			'name' => 'custom_h1',
@@ -24,7 +24,7 @@ acf_add_local_field_group(array (
 			'instructions' => 'Enter a Custom Page Title. If no page title is entered, the original title will be used',
 			'required' => 0,
 			'conditional_logic' => 0,
-			'wrapper' => array (
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
@@ -35,17 +35,17 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
-	),
-	'location' => $nest_acf_post_types,
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => 1,
-	'description' => '',
-));
+		),
+		'location' => $nest_acf_post_types,
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => 1,
+		'description' => '',
+	));
 
 endif;
 
@@ -53,31 +53,36 @@ endif;
 class Nest_Archives_SEO {
 
 	/**
- 	 * Option key, and option page slug
- 	 * @var string
- 	 */
+	 * Option key, and option page slug
+	 *
+	 * @var string
+	 */
 	private $key = '';
 
 	/**
- 	 * Options page metabox id
- 	 * @var string
- 	 */
+	 * Options page metabox id
+	 *
+	 * @var string
+	 */
 	private $metabox_id = '';
 
 	/**
 	 * Options Page title
+	 *
 	 * @var string
 	 */
 	protected $title = '';
 
 	/**
 	 * Options Page hook
+	 *
 	 * @var string
 	 */
 	protected $options_page = '';
-	
+
 	/**
 	 * This post Type
+	 *
 	 * @var string
 	 */
 	protected $post_type = '';
@@ -91,6 +96,7 @@ class Nest_Archives_SEO {
 
 	/**
 	 * Constructor
+	 *
 	 * @since 0.1.0
 	 */
 	public function __construct( $post_type ) {
@@ -98,60 +104,64 @@ class Nest_Archives_SEO {
 		$this->title = 'SEO Options';
 		$this->key = $post_type . '_options';
 		$this->post_type = $post_type;
-		
+
 		$this->add_options_page();
 	}
 
 	/**
 	 * Add menu options page
+	 *
 	 * @since 0.1.0
 	 */
 	public function add_options_page() {
-		if ( ! function_exists( 'acf_add_options_sub_page' ) ) return;
-		
+		if ( ! function_exists( 'acf_add_options_sub_page' ) ) { return;
+		}
+
 		$options_page = 'edit.php?post_type=' . $this->post_type;
 		if ( $this->post_type == 'post' ) {
 			$options_page = 'edit.php';
 		}
-		$this->options_page = acf_add_options_sub_page( 
-			array( 
-				'page_title' => 'Options', 
-				'menu_title' => 'Options ' . $this->post_type, 
+		$this->options_page = acf_add_options_sub_page(
+			array(
+				'page_title' => 'Options',
+				'menu_title' => 'Options ' . $this->post_type,
 				'parent_slug' => $options_page,
 				'menu_slug' => 'acf-seo-' . $this->post_type,
-				'post_id' => $this->post_type
-			) 
+				'post_id' => $this->post_type,
+			)
 		);
 
 	}
 }
 add_action( 'init', 'nest_archives_seo_init', 200, 0 );
 function nest_archives_seo_init() {
-	$post_types = get_post_types( array( 'has_archive' => true), 'names' );
-	$post_types[ 'post' ] = 'post';
+	$post_types = get_post_types( array(
+		'has_archive' => true,
+	), 'names' );
+	$post_types['post'] = 'post';
 	$post_types = array_keys( $post_types );
-	foreach( $post_types as $post_type ) {
+	foreach ( $post_types as $post_type ) {
 		new Nest_Archives_SEO( $post_type );
 	}
 	// ACF SEO Options for title / description
-	if( function_exists('acf_add_local_field_group') ):
-	
-	$nest_post_types = array_keys( get_post_types( '', 'names' ) );
-	$nest_acf_options_post_types = array();
-	foreach( $nest_post_types as $post_type ) {
-		$nest_acf_options_post_types[] = array(
+	if ( function_exists( 'acf_add_local_field_group' ) ) :
+
+		$nest_post_types = array_keys( get_post_types( '', 'names' ) );
+		$nest_acf_options_post_types = array();
+		foreach ( $nest_post_types as $post_type ) {
+			$nest_acf_options_post_types[] = array(
 			array(
 				'param' => 'options_page',
 				'operator' => '==',
-				'value' => 'acf-seo-' . $post_type	
-			)
-		);
-	}
-	acf_add_local_field_group(array (
-		'key' => 'group_57dc4ed63b26c',
-		'title' => 'Archive Options',
-		'fields' => array (
-			array (
+				'value' => 'acf-seo-' . $post_type,
+			),
+				);
+		}
+		acf_add_local_field_group(array(
+			'key' => 'group_57dc4ed63b26c',
+			'title' => 'Archive Options',
+			'fields' => array(
+			array(
 				'key' => 'field_57dc4eeb03026',
 				'label' => 'Archive Title',
 				'name' => 'archive_title',
@@ -159,7 +169,7 @@ function nest_archives_seo_init() {
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array (
+				'wrapper' => array(
 					'width' => '',
 					'class' => '',
 					'id' => '',
@@ -170,7 +180,7 @@ function nest_archives_seo_init() {
 				'append' => '',
 				'maxlength' => '',
 			),
-			array (
+			array(
 				'key' => 'field_57dc4efa03027',
 				'label' => 'Archive Content',
 				'name' => 'archive_content',
@@ -178,7 +188,7 @@ function nest_archives_seo_init() {
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array (
+				'wrapper' => array(
 					'width' => '',
 					'class' => '',
 					'id' => '',
@@ -188,21 +198,20 @@ function nest_archives_seo_init() {
 				'toolbar' => 'full',
 				'media_upload' => 1,
 			),
-		),
-		'location' => $nest_acf_options_post_types,
-		'menu_order' => 0,
-		'position' => 'normal',
-		'style' => 'default',
-		'label_placement' => 'top',
-		'instruction_placement' => 'label',
-		'hide_on_screen' => '',
-		'active' => 1,
-		'description' => '',
-	));
-	
+			),
+			'location' => $nest_acf_options_post_types,
+			'menu_order' => 0,
+			'position' => 'normal',
+			'style' => 'default',
+			'label_placement' => 'top',
+			'instruction_placement' => 'label',
+			'hide_on_screen' => '',
+			'active' => 1,
+			'description' => '',
+		));
+
 	endif;
-	
-	
+
 }
 
 // Override archive title and description
@@ -236,4 +245,4 @@ function nest_archive_seo_description( $description ) {
 
 
 
-?>
+

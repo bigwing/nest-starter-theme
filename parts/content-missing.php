@@ -18,7 +18,7 @@
 			<p><?php _e( 'This is the error message in the parts/content-missing.php template.', 'jointswp' ); ?></p>
 		</footer>
 		
-	<?php else: ?>
+	<?php else : ?>
 	
 		<header class="article-header">
 			<h1><?php _e( 'Oops, Post Not Found!', 'jointswp' ); ?></h1>

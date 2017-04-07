@@ -1,7 +1,7 @@
 <?php
-	if ( post_password_required() ) {
-		return;
-	}
+if ( post_password_required() ) {
+	return;
+}
 ?>
 
 <div id="comments" class="comments-area">
@@ -32,7 +32,7 @@
 		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="commentlist">
-			<?php wp_list_comments('type=comment&callback=joints_comments'); ?>
+			<?php wp_list_comments( 'type=comment&callback=joints_comments' ); ?>
 		</ol>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
@@ -51,11 +51,13 @@
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+	if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'jointswp' ); ?></p>
+	<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'jointswp' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(array('class_submit'=>'button')); ?>
+	<?php comment_form( array(
+		'class_submit' => 'button',
+	) ); ?>
 
 </div><!-- #comments -->
