@@ -37,7 +37,7 @@ function nest_copyright( $start_year = false, $echo = true ) {
 	// Ensure there is a range if the $start_year and $end_year are different (e.g., 2014-2015)
 	$start_year = (string) $start_year;
 	$end_year = date( 'Y' );
-	if ( $start_year === $end_year || $start_year === false ) {
+	if ( $start_year === $end_year || false === $start_year ) {
 		$copyright_string = sprintf( '&copy; %s', $end_year );
 	} else {
 		$copyright_string = sprintf( '&copy; %s-%s', $start_year, $end_year );
@@ -84,7 +84,7 @@ function nest_get_attachment_id_from_url( $attachment_url = '' ) {
 /*$type can be 'retina' for full size. $size can be an array or string. $echo true or false */
 function nest_get_logo_img( $type = 'retina', $size = array(), $echo = true ) {
 	$option_name = '';
-	if ( $type == 'retina' ) {
+	if ( 'retina' === $type ) {
 		$option_name = 'nest_retina_logo';
 	} else {
 		$option_name = 'nest_logo';
@@ -122,7 +122,7 @@ function nest_get_logo_srcset( $id = 'logo-image' ) {
 
 function nest_the_title_unfiltered( $post_id = 0, $echo = true ) {
 	global $post;
-	if ( is_object( $post ) || 0 == $post_id ) {
+	if ( is_object( $post ) || 0 === $post_id ) {
 		$post_id = $post->ID;
 	}
 	remove_filter( 'the_title', 'nest_the_title', 10, 2 );
@@ -141,13 +141,13 @@ function nest_format_content( $content ) {
 	return apply_filters( 'nest_the_content', $content );
 }
 function nest_custom_title( $post_id = 0, $before = '', $after = '', $echo = true ) {
-	if ( 0 == $post_id ) {
+	if ( 0 === $post_id ) {
 		$post_id = get_the_ID();
 	}
 	ob_start();
 	echo $before;
 	$title = function_exists( 'get_field' ) ? get_field( 'custom_h1' ) : false;
-	if ( false == $title || empty( $title ) ) {
+	if ( false === $title || empty( $title ) ) {
 		echo esc_html( get_the_title( $post_id ) );
 	} else {
 	    echo esc_html( $title );

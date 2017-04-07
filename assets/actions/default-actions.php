@@ -23,7 +23,7 @@ remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
 // Threaded Comments
 function nest_enable_threaded_comments() {
 	if ( ! is_admin() ) {
-		if ( is_singular() and comments_open() and (get_option( 'thread_comments' ) == 1) ) {
+		if ( is_singular() && comments_open() && ( 1 === get_option( 'thread_comments' ) ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 	}
@@ -52,7 +52,7 @@ add_action( 'admin_menu' , function() {
 
 	 $front_page = get_option( 'page_on_front' );
 
-	if ( $front_page != 0 ) {
+	if ( 0 !== $front_page ) {
 		$submenu['index.php'][500] = array( 'Edit Home Page', 'manage_options' , get_edit_post_link( $front_page ) );
 	}
 } );
@@ -61,7 +61,7 @@ add_action( 'admin_menu' , function() {
 add_action('admin_bar_menu', function( $admin_bar ) {
 	$front_page = get_option( 'page_on_front' );
 
-	if ( $front_page != 0 ) {
+	if ( 0 !== $front_page ) {
 		$admin_bar->add_menu( array(
 			'id'    => 'edit-home',
 			'parent' => 'site-name',

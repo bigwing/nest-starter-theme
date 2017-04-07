@@ -118,7 +118,7 @@ class Nest_Archives_SEO {
 		}
 
 		$options_page = 'edit.php?post_type=' . $this->post_type;
-		if ( $this->post_type == 'post' ) {
+		if ( 'post' === $this->post_type ) {
 			$options_page = 'edit.php';
 		}
 		$this->options_page = acf_add_options_sub_page(

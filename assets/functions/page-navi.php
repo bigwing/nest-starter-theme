@@ -8,7 +8,7 @@ function joints_page_navi( $before = '', $after = '' ) {
 	$numposts = $wp_query->found_posts;
 	$max_page = $wp_query->max_num_pages;
 	if ( $numposts <= $posts_per_page ) { return; }
-	if ( empty( $paged ) || $paged == 0 ) {
+	if ( empty( $paged ) || 0 === $paged ) {
 		$paged = 1;
 	}
 	$pages_to_show = 7;
@@ -20,7 +20,7 @@ function joints_page_navi( $before = '', $after = '' ) {
 		$start_page = 1;
 	}
 	$end_page = $paged + $half_page_end;
-	if ( ($end_page - $start_page) != $pages_to_show_minus_1 ) {
+	if ( ($end_page - $start_page) !== $pages_to_show_minus_1 ) {
 		$end_page = $start_page + $pages_to_show_minus_1;
 	}
 	if ( $end_page > $max_page ) {

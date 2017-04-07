@@ -18,7 +18,7 @@ function joints_comments( $comment, $args, $depth ) {
 						<time datetime="<?php echo comment_time( 'Y-m-j' ); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time( __( ' F jS, Y - g:ia', 'bigwing-nest' ) ); ?> </a></time>
 						<?php edit_comment_link( __( '(Edit)', 'bigwing-nest' ),'  ','' ) ?>
 					</header>
-					<?php if ( $comment->comment_approved == '0' ) : ?>
+					<?php if ( '0' === $comment->comment_approved ) : ?>
 						<div class="alert alert-info">
 							<p><?php _e( 'Your comment is awaiting moderation.', 'bigwing-nest' ) ?></p>
 						</div>

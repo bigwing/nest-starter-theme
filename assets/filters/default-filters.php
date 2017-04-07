@@ -36,7 +36,7 @@ function nest_view_article( $more ) {
 \*------------------------------------*/
 function nest_filter_media_comment_status( $open, $post_id ) {
 	$post = get_post( $post_id );
-	if ( $post->post_type == 'attachment' ) {
+	if ( 'attachment' === $post->post_type ) {
 		return false;
 	}
 	return $open;

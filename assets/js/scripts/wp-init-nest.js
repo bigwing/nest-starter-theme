@@ -12,8 +12,8 @@ jQuery( document ).ready( function( $ ) {
 			}
 			$anchor = jQuery( trigger ).find( 'a' );
 			attr = $anchor.attr( 'href' );
-			if ( attr == '#' ) {
 				 return;
+			if ( '#' === attr ) {
 			} else {
 				 window.location = attr;
 				 return false;
