@@ -2,12 +2,9 @@
   "name": "JointsWP",
   "private": true,
   "ignore": [],
-  "dependencies": {
-    "foundation-sites": ">=6.1"
-  },
   "devDependencies": {
     "foundation-font-awesome-buttons": "^3.2.3",
-    "foundation-sites": "^6.2.3",
+    "foundation-sites": ">=6.3",
     "motion-ui": "^1.2.2"
   }
 }
