@@ -26,7 +26,7 @@ function nest_add_slug_to_body_class( $classes ) {
 // Custom View Article link to Post
 function nest_view_article( $more ) {
 	global $post;
-	return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . __( 'View Article', 'opubco' ) . '</a>';
+	return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . __( 'View Article', 'bigwing-nest' ) . '</a>';
 }
 
 

@@ -2,8 +2,8 @@
 // Register menus
 register_nav_menus(
 	array(
-		'main-nav' => __( 'The Main Menu', 'jointswp' ),   // Main nav in header
-		'footer-links' => __( 'Footer Links', 'jointswp' ), // Secondary nav in footer
+		'main-nav' => __( 'The Main Menu', 'bigwing-nest' ),   // Main nav in header
+		'footer-links' => __( 'Footer Links', 'bigwing-nest' ), // Secondary nav in footer
 		'social-nav' => 'Social Menu',
 		'header-top-utility-nav' => 'Header Top Menu',
 	)
@@ -54,7 +54,7 @@ class Off_Canvas_Menu_Walker extends Walker_Nav_Menu {
 function joints_footer_links() {
 	wp_nav_menu(array(
 		'container' => 'false',                         // Remove nav container
-		'menu' => __( 'Footer Links', 'jointswp' ),   	// Nav name
+		'menu' => __( 'Footer Links', 'bigwing-nest' ),   	// Nav name
 		'menu_class' => 'menu',      					// Adding custom nav class
 		'theme_location' => 'footer-links',             // Where it's located in the theme
 		'depth' => 0,                                   // Limit the depth of the nav

@@ -2,8 +2,8 @@
 // SIDEBARS AND WIDGETIZED AREAS
 function joints_register_sidebars() {
 	register_sidebar(array(
-		'name' => __( 'Internal Pages', 'opubco' ),
-		'description' => __( 'For pages and post types', 'opubco' ),
+		'name' => __( 'Internal Pages', 'bigwing-nest' ),
+		'description' => __( 'For pages and post types', 'bigwing-nest' ),
 		'id' => 'widget-internal-pages',
 		'before_widget' => '<div id="%1$s" class="%2$s widget">',
 		'after_widget' => '</div>',
@@ -11,8 +11,8 @@ function joints_register_sidebars() {
 		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
-		'name' => __( 'Blog Pages', 'opubco' ),
-		'description' => __( 'For blog areas', 'opubco' ),
+		'name' => __( 'Blog Pages', 'bigwing-nest' ),
+		'description' => __( 'For blog areas', 'bigwing-nest' ),
 		'id' => 'widget-blogs',
 		'before_widget' => '<div id="%1$s" class="%2$s widget">',
 		'after_widget' => '</div>',
@@ -30,8 +30,8 @@ function joints_register_sidebars() {
 
 	register_sidebar(array(
 		'id' => 'sidebar2',
-		'name' => __('Sidebar 2', 'jointswp'),
-		'description' => __('The second (secondary) sidebar.', 'jointswp'),
+		'name' => __('Sidebar 2', ''),
+		'description' => __('The second (secondary) sidebar.', ''),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',

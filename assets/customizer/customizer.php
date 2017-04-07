@@ -9,10 +9,10 @@ add_action( 'customize_register', function( $wp_customize ) {
 	$wp_customize->add_section(
 		'nest_address_options',
 		array(
-			'title'       => __( 'Address Settings', 'mytheme' ),
+			'title'       => __( 'Address Settings', 'bigwing-nest' ),
 			'priority'    => 800,
 			'capability'  => 'edit_theme_options',
-			'description' => __( 'Address Settings', 'mytheme' ),
+			'description' => __( 'Address Settings', 'bigwing-nest' ),
 		)
 	);
 	/* Street */
